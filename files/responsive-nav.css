@@ -127,7 +127,7 @@
 .language_toggle{position: fixed;right:60px;top:0;color: #999;z-index: 999999;line-height: 60px;font-size: 14px;}
 .language_toggle a{color: #fff;padding: 0 5px;}
 /*PC样式*/
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 1000px) {
   .nav-collapse a {
     margin: 0;
     padding: 1em;
