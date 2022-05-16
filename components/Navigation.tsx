@@ -1,31 +1,36 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
+import { Fragment, useMemo } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-
-const navigation = [
-  { name: 'Hackathon', href: '#', current: true },
-  { name: 'Summit Agenda', href: '#', current: false },
-  { name: 'Speakers', href: '#', current: false },
-  { name: 'Partnership', href: '#', current: false },
-  { name: 'Venue', href: '#', current: false },
-  { name: 'Contact Us', href: '#', current: false },
-]
+import { useTranslation } from 'next-i18next'
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
 const LocaleMap: Record<string, string> = {
-  'en-US': '中文',
+  en: '中文',
   zh: 'EN',
 }
 
 export default function Navigation() {
   const router = useRouter()
-  const localeButtonContent = LocaleMap[router.locale ?? 'en-US']
+  const localeButtonContent = LocaleMap[router.locale ?? 'en']
+  const { t } = useTranslation('common')
+
+  const navigation = useMemo(
+    () => [
+      { name: t('menu_hackathon'), href: '#', current: true },
+      { name: 'Summit Agenda', href: '#', current: false },
+      { name: 'Speakers', href: '#', current: false },
+      { name: 'Partnership', href: '#', current: false },
+      { name: 'Venue', href: '#', current: false },
+      { name: 'Contact Us', href: '#', current: false },
+    ],
+    [],
+  )
 
   return (
     <Disclosure as="nav">
@@ -36,7 +41,7 @@ export default function Navigation() {
               <div className="flex flex-1 items-center justify-start sm:items-stretch sm:justify-between">
                 <div className="flex flex-shrink-0 items-center">
                   <img className="block h-8 w-auto lg:hidden" src="/favicon.ico" alt="ETH Shanghai" />
-                  <span>Logo</span>
+                  <span>{t('logo')}</span>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -56,7 +61,7 @@ export default function Navigation() {
                       <Link
                         className="rounded-md text-sm font-medium text-gray-500 hover:bg-gray-300 hover:text-white"
                         href="/"
-                        locale={router.locale === 'en-US' ? 'zh' : 'en-US'}>
+                        locale={router.locale === 'en' ? 'zh' : 'en'}>
                         <a>{localeButtonContent}</a>
                       </Link>
                     </div>
@@ -70,11 +75,11 @@ export default function Navigation() {
                       <Link
                         className="rounded-md text-sm font-medium text-gray-500 hover:bg-gray-300 hover:text-white"
                         href="/"
-                        locale={router.locale === 'en-US' ? 'zh' : 'en-US'}>
+                        locale={router.locale === 'en' ? 'zh' : 'en'}>
                         <a>{localeButtonContent}</a>
                       </Link>
                     </div>
-                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white">
                       {open ? (
                         <XIcon className="block h-6 w-6" aria-hidden="true" />
                       ) : (

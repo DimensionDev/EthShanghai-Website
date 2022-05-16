@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Navigation from '../components/Navigation'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const Home: NextPage = () => {
   return (
@@ -8,7 +9,7 @@ const Home: NextPage = () => {
       <header>
         <Navigation />
       </header>
-      <main className="container">Hello, Shanghai</main>
+      <main className="container m-auto p-8">Hello, Shanghai</main>
 
       <footer className="flex h-24 w-full items-center justify-center border-t">
         <a
@@ -22,5 +23,11 @@ const Home: NextPage = () => {
     </div>
   )
 }
+
+export const getStaticProps = async ({ locale }: any) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common', 'footer'])),
+  },
+})
 
 export default Home
