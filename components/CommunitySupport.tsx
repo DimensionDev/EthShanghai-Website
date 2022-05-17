@@ -22,7 +22,7 @@ export const CommunitySupport = () => {
       <div className="flex flex-col gap-y-6">
         <div className="grid grid-cols-3 grid-rows-3 gap-4 xl:grid-cols-5 xl:grid-rows-2">
           {config.map((x) => (
-            <div className="inline-flex justify-center rounded-lg bg-support px-2 py-3 xl:px-7 xl:py-8">
+            <div key={x} className="inline-flex justify-center rounded-lg bg-support px-2 py-3 xl:px-7 xl:py-8">
               <img src={x} />
             </div>
           ))}

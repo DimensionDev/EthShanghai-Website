@@ -65,7 +65,7 @@ const Home: NextPage = () => {
       </header>
       <div>
         <Banner>
-          <div className="mb-16 flex flex-col justify-center gap-y-4 text-white">
+          <div className="flex flex-col justify-center gap-y-4 self-end text-white">
             <div className="flex flex-col gap-x-6 gap-y-6 xl:flex-row">
               <button className="flex items-center justify-center gap-x-2.5 bg-helper py-3 text-xl font-bold text-link xl:w-1/2">
                 <Icon name="youtube"></Icon>
