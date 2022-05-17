@@ -9,6 +9,7 @@ import { ReactNode } from 'react'
 import { SummitAgenda } from '../components/SummitAgenda'
 import { Footer } from '../components/Footer'
 import { Speakers } from '../components/Speakers'
+import { Hosts } from '../components/Hosts'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common')
@@ -70,6 +71,9 @@ const Home: NextPage = () => {
         </section>
         <section className="mt-28">
           <Speakers />
+        </section>
+        <section className="mt-28">
+          <Hosts />
         </section>
       </main>
 
