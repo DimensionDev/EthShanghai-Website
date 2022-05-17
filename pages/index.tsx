@@ -12,6 +12,7 @@ import { Speakers } from '../components/Speakers'
 import { Hosts } from '../components/Hosts'
 import { MediaSupport } from '../components/MediaSupport'
 import { CommunitySupport } from '../components/CommunitySupport'
+import { Icon } from '../components/Icon'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common')
@@ -58,7 +59,22 @@ const Home: NextPage = () => {
         <Navigation />
       </header>
       <div>
-        <Banner />
+        <Banner>
+          <div className="mb-16 flex flex-col justify-center gap-y-4 text-white">
+            <div className="flex gap-x-6">
+              <button className="flex w-1/2 items-center justify-center gap-x-2.5 bg-helper py-3 text-2xl font-bold text-link">
+                <Icon name="youtube"></Icon>
+                <span className="inline-flex">Watch Livestream</span>
+              </button>
+              <button className="flex w-1/2 justify-center bg-helper py-3 text-2xl font-bold text-link">
+                <span className="inline-flex">Hack with us!</span>
+              </button>
+            </div>
+            <div>
+              <p className="text-center">Time: 05/20/2018 08:00 am (GMT+8)</p>
+            </div>
+          </div>
+        </Banner>
       </div>
       <main className="container m-auto p-8">
         <section className="flex flex-col gap-y-24">
