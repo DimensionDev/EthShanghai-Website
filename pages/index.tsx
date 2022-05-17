@@ -5,13 +5,13 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-main">
       <header>
         <Navigation />
       </header>
       <main className="container m-auto p-8">Hello, Shanghai</main>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
+      <footer className="flex h-24 w-full items-center justify-center">
         <a
           className="flex items-center justify-center gap-2"
           href="https://mask.io"

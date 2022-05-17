@@ -1,3 +1,9 @@
 {
-  "menu_hackathon": "黑客松"
+  "menu_hackathon": "黑客松",
+  "menu_summit_agenda": "Summit Agenda",
+  "menu_about_this_summit": "About The Summit",
+  "menu_speakers": "Speakers",
+  "menu_partnership": "Partnership",
+  "menu_Venue": "Venue",
+  "menu_contact_us": "Contact Us"
 }
