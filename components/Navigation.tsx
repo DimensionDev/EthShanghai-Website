@@ -57,7 +57,7 @@ export default function Navigation() {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="h-26 w-full bg-nav/[0.8] sm:px-6 lg:px-9">
+          <div className="relative z-10 h-26 w-full bg-nav/[0.8] sm:px-6 lg:px-9">
             <div className="relative flex h-full items-center justify-between">
               <div className="flex h-full flex-1 items-center justify-start sm:items-stretch sm:justify-between">
                 <div className="flex h-full flex-shrink-0 items-center">

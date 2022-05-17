@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import Navigation from '../components/Navigation'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { Banner } from '../components/Banner'
 
 const Home: NextPage = () => {
   return (
@@ -9,6 +10,9 @@ const Home: NextPage = () => {
       <header>
         <Navigation />
       </header>
+      <div>
+        <Banner />
+      </div>
       <main className="container m-auto p-8">Hello, Shanghai</main>
 
       <footer className="flex h-24 w-full items-center justify-center">
