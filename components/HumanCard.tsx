@@ -16,7 +16,7 @@ export const HumanCard = ({ name, description, image, backgroundClass, width = 3
       style={{ flex: '1 0 21%', maxWidth: 368 }}>
       <div className="p-6">
         <div>
-          <Image src={image} layout="intrinsic" width={width} height={height} alt={'TODO'} />
+          <img src={image} alt={'TODO'} />
         </div>
         <div className="mt-2.5 flex flex-col justify-center gap-y-3">
           <p className="text-shadow text-center text-2xl font-bold">{name}</p>
