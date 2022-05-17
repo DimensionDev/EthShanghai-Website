@@ -10,6 +10,8 @@ import { SummitAgenda } from '../components/SummitAgenda'
 import { Footer } from '../components/Footer'
 import { Speakers } from '../components/Speakers'
 import { Hosts } from '../components/Hosts'
+import { MediaSupport } from '../components/MediaSupport'
+import { CommunitySupport } from '../components/CommunitySupport'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common')
@@ -75,8 +77,13 @@ const Home: NextPage = () => {
         <section className="mt-28">
           <Hosts />
         </section>
+        <section className="mt-16">
+          <MediaSupport />
+        </section>
+        <section className="mt-16">
+          <CommunitySupport />
+        </section>
       </main>
-
       <section>
         <Footer />
       </section>

@@ -3,8 +3,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        main: '#20005A',
+        main: '#29036D',
         nav: '#1C014F',
+        support: '#230062',
         helper: '#00FFC2',
         footer: '#1E0054',
       },
