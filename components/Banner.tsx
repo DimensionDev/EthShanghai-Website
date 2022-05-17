@@ -12,11 +12,11 @@ export const Banner = ({ children }: BannerProps) => {
         <Image src={'/images/banner/banner_bg.svg'} layout="fill" objectFit="cover" alt={'TODO'} />
       </div>
       <div className="container relative z-20 m-auto">
-        <div className="flex justify-center self-end">
+        <div className="flex items-end justify-center">
           <div className="w-1/3">
             <img src={'/images/banner/shanghai_1.svg'} />
           </div>
-          <div className="w-2/5">
+          <div className="w-2/5 pt-32">
             <div className="flex justify-center">
               <img src={'/images/banner/title.svg'} />
             </div>

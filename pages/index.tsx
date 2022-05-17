@@ -13,6 +13,7 @@ import { Hosts } from '../components/Hosts'
 import { MediaSupport } from '../components/MediaSupport'
 import { CommunitySupport } from '../components/CommunitySupport'
 import { Icon } from '../components/Icon'
+import { Partnerships } from '../components/Partnerships'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common')
@@ -93,10 +94,13 @@ const Home: NextPage = () => {
         <section className="mt-28">
           <Hosts />
         </section>
+        <section className="mt-28">
+          <Partnerships />
+        </section>
         <section className="mt-16">
           <MediaSupport />
         </section>
-        <section className="mt-16">
+        <section className="mt-16 mb-32">
           <CommunitySupport />
         </section>
       </main>

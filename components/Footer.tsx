@@ -4,7 +4,7 @@ import { Icon } from './Icon'
 export const Footer = () => {
   const { t } = useTranslation('common')
   return (
-    <footer className="flex justify-center gap-x-80 p-16 text-white">
+    <footer className="flex justify-center gap-x-80 bg-footer p-16 text-white">
       <div className="flex flex-col gap-y-12">
         <div>
           <h4 className="inline-flex border-b-6 border-nav text-4xl font-bold leading-6">{t('footer_contact_us')}</h4>

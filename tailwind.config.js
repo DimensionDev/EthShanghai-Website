@@ -37,6 +37,7 @@ module.exports = {
         'hero-pattern': "url('/images/banner.png')",
         'hero-pattern-2x': "url('/images/banner_2x.png')",
         'speaker-master': 'linear-gradient(27.99deg, #00FFC2 0.33%, #406FFF 99.69%)',
+        partner: 'linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%)',
         speaker: 'linear-gradient(27.99deg, #EB5EC8 0.33%, #00FFC2 99.69%)',
       },
       colors: {
