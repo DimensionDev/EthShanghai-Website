@@ -9,7 +9,7 @@ const agendaConfig = (t: (key: string) => string) => [
         during: '09:00 ~ 09:10',
         content: (
           <div>
-            <p>
+            <p className="break-all">
               {t('agenda_opening_remarks')} – <span className="out-link inline-flex">Terry Branstad</span>, Former U.S.
               Ambassador to China
             </p>
@@ -132,10 +132,6 @@ const agendaConfig = (t: (key: string) => string) => [
             <p>
               <b>{t('agenda_day1_7')}</b>
             </p>
-            <p>{t('agenda_host')}</p>
-            <p>
-              <span className="out-link inline-flex">Xiang Yao</span>
-            </p>
           </div>
         ),
       },
@@ -143,17 +139,21 @@ const agendaConfig = (t: (key: string) => string) => [
         during: '14:30 ~ 15:30',
         content: (
           <div>
-            <p>{t('agenda_guests')}</p>
-            <p>
+            <p className="mb-3">{t('agenda_host')}</p>
+            <p className="mb-4">
+              <span className="out-link inline-flex">Xiang Yao</span>
+            </p>
+            <p className="mb-4">{t('agenda_guests')}</p>
+            <p className="mb-2">
               <span className="out-link inline-flex">Ling Zhang</span> , Managing Partner at Old Fashion Research
             </p>
-            <p>
+            <p className="mb-2">
               <span className="out-link inline-flex">Zhe Sun</span>, Shanghai University of Finance and Economics
             </p>
-            <p>
+            <p className="mb-2">
               <span className="out-link inline-flex">Jinhai Luo</span>, Founder of Quantum School
             </p>
-            <p>
+            <p className="mb-2">
               <span className="out-link inline-flex">Qidong Sun</span>, Art Director of MadeIn
             </p>
           </div>
@@ -216,23 +216,23 @@ const agendaConfig = (t: (key: string) => string) => [
         content: (
           <div>
             <p>{t('agenda_roundtable_discussion')}</p>
-            <p>
+            <p className="mb-4">
               <b>{t('agenda_day1_10')}</b>
             </p>
-            <p>{t('agenda_host')}</p>
+            <p className="mb-4">{t('agenda_host')}</p>
             <p>
               <span className="out-link inline-flex">Afra Wang</span>
             </p>
-            <p>
+            <p className="mb-2">
               <span className="out-link inline-flex">Ling Zhang</span> , Managing Partner at Old Fashion Research
             </p>
-            <p>
+            <p className="mb-2">
               <span className="out-link inline-flex">Zhe Sun</span>, Shanghai University of Finance and Economics
             </p>
-            <p>
+            <p className="mb-2">
               <span className="out-link inline-flex">Jinhai Luo</span>, Founder of Quantum School
             </p>
-            <p>
+            <p className="mb-2">
               <span className="out-link inline-flex">Qidong Sun</span>, Art Director of MadeIn
             </p>
           </div>
@@ -243,7 +243,7 @@ const agendaConfig = (t: (key: string) => string) => [
         content: (
           <div>
             <p>
-              {t('agenda_keynote_speech')} - <span className="out-link inline-flex">Suji Yan</span> , , Founder of Mask
+              {t('agenda_keynote_speech')} - <span className="out-link inline-flex">Suji Yan</span> , Founder of Mask
               Network
             </p>
           </div>
@@ -269,14 +269,16 @@ export const SummitAgenda = () => {
       <div className="flex flex-col gap-y-16">
         {agendaConfig(t).map((x) => (
           <div key={x.during}>
-            <h4 className="mb-9 text-4xl font-bold">{x.during}</h4>
+            <h4 className="mb-9 text-2xl font-bold xl:text-4xl">{x.during}</h4>
             <div className="flex flex-col gap-y-8">
               {x.subTimes.map((t) => (
-                <div key={t.during} className="flex gap-x-12">
-                  <div className="w-1/3 text-right">
-                    <time className="text-time">{t.during}</time>
+                <div
+                  key={t.during}
+                  className="flex flex-col gap-4 bg-footer p-6 xl:flex-row xl:gap-x-12 xl:bg-transparent xl:p-0">
+                  <div className="flex-shrink-0 flex-grow-0 text-left xl:w-1/3 xl:text-right">
+                    <time className="inline-flex text-time">{t.during}</time>
                   </div>
-                  <div>{t.content}</div>
+                  <div className={'flex-1 break-all'}>{t.content}</div>
                 </div>
               ))}
             </div>

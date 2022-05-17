@@ -44,7 +44,7 @@ export default function Navigation() {
 
   const navigation: NavItem[] = useMemo(
     () => [
-      { name: t('menu_about_this_summit'), href: '#', current: true },
+      { name: t('menu_about_this_summit'), href: '#about-summit', current: true },
       { name: t('menu_hackathon'), href: '#', current: false },
       { name: t('menu_summit_agenda'), href: '#summit-agenda', current: false },
       { name: t('menu_speakers'), href: '#speakers', current: false },

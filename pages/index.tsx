@@ -53,6 +53,9 @@ const Home: NextPage = () => {
           <p className="first-letter text-lg text-white">{t('activity_hackathon_p_1')}</p>
           <p className="text-lg text-white">{t('activity_hackathon_p_2')}</p>
           <p className="text-lg text-white">{t('activity_hackathon_p_3')}</p>
+          <button className="inline-flex w-36 justify-center bg-helper py-3 text-xl font-bold text-link">
+            <span className="inline-flex">{t('button_more_details')}</span>
+          </button>
         </div>
       ),
     },
@@ -69,10 +72,10 @@ const Home: NextPage = () => {
             <div className="flex flex-col gap-x-6 gap-y-6 xl:flex-row">
               <button className="flex items-center justify-center gap-x-2.5 bg-helper py-3 text-xl font-bold text-link xl:w-1/2">
                 <Icon name="youtube"></Icon>
-                <span className="inline-flex">Watch Livestream</span>
+                <span className="inline-flex">{t('button_watch_youtube')}</span>
               </button>
               <button className="flex justify-center bg-helper py-3 text-xl font-bold text-link xl:w-1/2">
-                <span className="inline-flex">Hack with us!</span>
+                <span className="inline-flex">{t('button_hack_with_me')}</span>
               </button>
             </div>
             <div>
@@ -82,23 +85,25 @@ const Home: NextPage = () => {
         </Banner>
       </div>
       <main className="container m-auto p-8">
-        <section className="flex flex-col gap-y-24">
+        <section id="about-summit" className="flex flex-col gap-y-48">
           {activities.map((x, index) => (
             <ActivitySection key={index} title={x.title} illustration={x.illustration} direction={x.direction as any}>
               {x.content}
             </ActivitySection>
           ))}
         </section>
-        <section className="mt-28">
+        <section className="mt-36">
           <SummitAgenda />
         </section>
-        <section className="mt-28">
-          <Speakers />
-        </section>
-        <section className="mt-28">
+      </main>
+      <section className="mt-28">
+        <Speakers />
+      </section>
+      <main className="container m-auto p-8">
+        <section className="mt-36">
           <Hosts />
         </section>
-        <section className="mt-28">
+        <section className="mt-36">
           <Partnerships />
         </section>
         <section className="mt-16">

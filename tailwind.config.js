@@ -44,6 +44,9 @@ module.exports = {
         link: '#29036D',
         time: '#00FFC2',
       },
+      boxShadow: {
+        card: '4px 4px 30px rgba(217, 42, 183, 0.2)',
+      },
     },
   },
   plugins: [],

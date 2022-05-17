@@ -94,30 +94,34 @@ export const Speakers = () => {
 
   return (
     <div id="speakers">
-      <div className="mb-20">
+      <div className="container m-auto mb-20 flex justify-center">
         <HeaderSection content={t('speakers')} addition={t('speakers_title_note')} />
       </div>
-      <div className="grid grid-cols-2 grid-rows-2 gap-9 xl:grid-cols-4 xl:grid-rows-1">
-        {speakerMasters.map((x) => (
-          <HumanCard
-            name={x.name}
-            description={x.description}
-            image={x.image}
-            key={x.name}
-            backgroundClass={'speaker-master'}
-          />
-        ))}
+      <div className="m-auto flex justify-center bg-[#1E0054] py-12 px-8">
+        <div className="container grid grid-cols-2 grid-rows-2 gap-9 xl:grid-cols-4 xl:grid-rows-1">
+          {speakerMasters.map((x) => (
+            <HumanCard
+              name={x.name}
+              description={x.description}
+              image={x.image}
+              key={x.name}
+              backgroundClass={'bg-speaker-master'}
+            />
+          ))}
+        </div>
       </div>
-      <div className="mt-24 grid grid-cols-2 grid-rows-2 gap-9 xl:grid-cols-4 xl:grid-rows-3">
-        {speaker.map((x) => (
-          <HumanCard
-            name={x.name}
-            description={x.description}
-            image={x.image}
-            key={x.name}
-            backgroundClass={'speaker'}
-          />
-        ))}
+      <div className="container m-auto mb-20 flex justify-center px-8">
+        <div className="container mt-12 grid grid-cols-2 grid-rows-2 gap-9 xl:grid-cols-4 xl:grid-rows-3 xl:px-20">
+          {speaker.map((x) => (
+            <HumanCard
+              name={x.name}
+              description={x.description}
+              image={x.image}
+              key={x.name}
+              backgroundClass={'bg-speaker'}
+            />
+          ))}
+        </div>
       </div>
     </div>
   )
