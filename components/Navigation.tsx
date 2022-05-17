@@ -66,7 +66,7 @@ export default function Navigation() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex h-full space-x-4">
                     {navigation.map((item) => (
-                      <NavItem item={item} />
+                      <NavItem key={item.name} item={item} />
                     ))}
                     <div className="flex items-center justify-center text-right">
                       <Link
