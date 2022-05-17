@@ -6,13 +6,13 @@
   @apply text-4xl;
 }
 
-.activity-section {
+.header-section {
   position: relative;
   z-index: 10;
   @apply pl-6;
 }
 
-.activity-section:after {
+.header-section:after {
   content: '';
   display: inline-flex;
   position: absolute;
@@ -23,7 +23,7 @@
   @apply bg-helper;
 }
 
-.activity-section:before {
+.header-section:before {
   content: '';
   display: inline-flex;
   position: absolute;
@@ -35,13 +35,13 @@
   @apply bg-helper;
 }
 
-.activity-section-reverse {
+.header-section-reverse {
   position: relative;
   z-index: 10;
   @apply pl-6;
 }
 
-.activity-section-reverse:before {
+.header-section-reverse:before {
   content: '';
   display: inline-flex;
   position: absolute;
@@ -52,7 +52,7 @@
   @apply bg-helper;
 }
 
-.activity-section-reverse:after {
+.header-section-reverse:after {
   content: '';
   display: inline-flex;
   position: absolute;
@@ -62,4 +62,10 @@
   top: 32px;
   z-index: -1;
   @apply bg-helper;
+}
+
+.out-link {
+  @apply font-bold;
+  @apply border-b-2;
+  @apply border-nav;
 }

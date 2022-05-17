@@ -6,6 +6,7 @@ module.exports = {
         main: '#20005A',
         nav: '#1C014F',
         helper: '#00FFC2',
+        footer: '#1E0054',
       },
       height: {
         26: '6.5rem',

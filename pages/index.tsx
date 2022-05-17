@@ -6,12 +6,13 @@ import { Banner } from '../components/Banner'
 import { useTranslation } from 'next-i18next'
 import { ActivitySection } from '../components/ActivitySection'
 import { ReactNode } from 'react'
+import { SummitAgenda } from '../components/SummitAgenda'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common')
   const activities = [
     {
-      title: <h3 className="activity-section inline-flex text-5xl font-bold text-white">{t('activity_summit')}</h3>,
+      title: <h3 className="header-section inline-flex text-5xl font-bold text-white">{t('activity_summit')}</h3>,
       illustration: (
         <div>
           <Image src={'/images/activity_summit.svg'} width={390} height={320} layout={'fixed'} />
@@ -28,9 +29,7 @@ const Home: NextPage = () => {
     },
     {
       title: (
-        <h3 className="activity-section-reverse inline-flex text-5xl font-bold text-white">
-          {t('activity_hackathon')}
-        </h3>
+        <h3 className="header-section-reverse inline-flex text-5xl font-bold text-white">{t('activity_hackathon')}</h3>
       ),
       illustration: (
         <div>
@@ -63,6 +62,9 @@ const Home: NextPage = () => {
               {x.content}
             </ActivitySection>
           ))}
+        </section>
+        <section className="mt-28">
+          <SummitAgenda />
         </section>
       </main>
 
