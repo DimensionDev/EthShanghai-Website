@@ -1,4 +1,5 @@
 import { useTranslation } from 'next-i18next'
+import { HeaderSection } from './HeaderSection'
 
 const agendaConfig = [
   {
@@ -95,9 +96,7 @@ export const SummitAgenda = () => {
   const { t } = useTranslation('common')
   return (
     <div className="flex flex-col gap-y-20 px-28 text-white">
-      <div className="flex justify-center">
-        <h3 className="header-section inline-flex text-5xl font-bold text-white">{t('summit_agenda')}</h3>
-      </div>
+      <HeaderSection content={t('summit_agenda')} />
       <div className="flex flex-col gap-y-16">
         {agendaConfig.map((x) => (
           <div key={x.during}>
