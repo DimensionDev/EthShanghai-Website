@@ -97,7 +97,7 @@ export const Speakers = () => {
       <div className="mb-20">
         <HeaderSection content={t('speakers')} addition={t('speakers_title_note')} />
       </div>
-      <div className="flex gap-x-9">
+      <div className="grid grid-cols-2 grid-rows-2 gap-9 xl:grid-cols-4 xl:grid-rows-1">
         {speakerMasters.map((x) => (
           <HumanCard
             name={x.name}
@@ -108,7 +108,7 @@ export const Speakers = () => {
           />
         ))}
       </div>
-      <div className="mt-16 flex flex-wrap gap-7 px-16">
+      <div className="mt-24 grid grid-cols-2 grid-rows-2 gap-9 xl:grid-cols-4 xl:grid-rows-3">
         {speaker.map((x) => (
           <HumanCard
             name={x.name}
@@ -116,8 +116,6 @@ export const Speakers = () => {
             image={x.image}
             key={x.name}
             backgroundClass={'speaker'}
-            width={290}
-            height={339}
           />
         ))}
       </div>

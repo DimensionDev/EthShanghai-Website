@@ -48,7 +48,7 @@ export const Partnerships = () => {
       <div className="mb-20">
         <HeaderSection content={t('partnerships')} />
       </div>
-      <div className="mt-16 grid grid-cols-4 grid-rows-2 gap-7 px-16">
+      <div className="mt-16 grid hidden grid-cols-4 grid-rows-2 gap-7 px-16 xl:grid">
         {partner1.map((x) => (
           <PartnerCard
             name={x.name}
@@ -73,6 +73,30 @@ export const Partnerships = () => {
           />
         ))}
         <div></div>
+      </div>
+      <div className="mt-16 grid grid-cols-2 grid-rows-2 gap-7 xl:hidden">
+        {partner1.map((x) => (
+          <PartnerCard
+            name={x.name}
+            description={x.description}
+            image={x.image}
+            key={x.name}
+            backgroundClass={'partner'}
+            width={290}
+            height={339}
+          />
+        ))}
+        {partner2.map((x) => (
+          <PartnerCard
+            name={x.name}
+            description={x.description}
+            image={x.image}
+            key={x.name}
+            backgroundClass={'partner'}
+            width={320}
+            height={339}
+          />
+        ))}
       </div>
     </div>
   )

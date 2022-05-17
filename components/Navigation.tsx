@@ -49,8 +49,7 @@ export default function Navigation() {
       { name: t('menu_summit_agenda'), href: '#summit-agenda', current: false },
       { name: t('menu_speakers'), href: '#speakers', current: false },
       { name: t('menu_partnership'), href: '#partnerships', current: false },
-      { name: t('menu_Venue'), href: '#', current: false },
-      { name: t('menu_contact_us'), href: '#', current: false },
+      { name: t('menu_contact_us'), href: '#contact-us', current: false },
     ],
     [],
   )

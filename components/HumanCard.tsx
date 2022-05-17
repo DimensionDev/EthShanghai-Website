@@ -11,10 +11,8 @@ interface HumanCardProps {
 
 export const HumanCard = ({ name, description, image, backgroundClass, width = 320, height = 374 }: HumanCardProps) => {
   return (
-    <div
-      className={`${backgroundClass} w-1/4 rounded-2.5xl bg-speaker-master text-white`}
-      style={{ flex: '1 0 21%', maxWidth: 368 }}>
-      <div className="p-6">
+    <div className={`${backgroundClass} rounded-xl bg-speaker-master text-white xl:rounded-2.5xl`}>
+      <div className="p-3 xl:p-6">
         <div>
           <img src={image} alt={'TODO'} />
         </div>

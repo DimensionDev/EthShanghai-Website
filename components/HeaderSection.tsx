@@ -12,8 +12,10 @@ const directionMap = {
 export const HeaderSection = ({ content, direction, addition }: HeaderSectionProps) => {
   return (
     <div>
-      <div className="flex justify-center text-white">
-        <h3 className={`${directionMap[direction ?? 'normal']} inline-flex text-5xl font-bold`}>{content}</h3>
+      <div className="mx-4 flex justify-center text-white xl:mx-0">
+        <h3 className={`${directionMap[direction ?? 'normal']} inline-flex text-3xl font-bold xl:text-5xl`}>
+          {content}
+        </h3>
       </div>
       {addition && <p className={`text-center text-lg text-white`}>{addition}</p>}
     </div>

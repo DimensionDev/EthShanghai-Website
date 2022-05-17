@@ -4,10 +4,12 @@ import { Icon } from './Icon'
 export const Footer = () => {
   const { t } = useTranslation('common')
   return (
-    <footer className="flex justify-center gap-x-80 bg-footer p-16 text-white">
+    <footer className="flex flex-col justify-center gap-x-24 gap-y-16 bg-footer p-16 text-white md:flex-row xl:gap-x-80">
       <div className="flex flex-col gap-y-12">
-        <div>
-          <h4 className="inline-flex border-b-6 border-nav text-4xl font-bold leading-6">{t('footer_contact_us')}</h4>
+        <div id="contact-us">
+          <h4 className="inline-flex border-b-6 border-nav text-xl font-bold  leading-6 xl:text-4xl">
+            {t('footer_contact_us')}
+          </h4>
         </div>
         <div className="flex flex-col gap-y-6">
           <div className="flex gap-x-3">
@@ -26,7 +28,7 @@ export const Footer = () => {
       </div>
       <div className="flex flex-col gap-y-12">
         <div>
-          <h4 className="inline-flex border-b-6 border-nav text-4xl font-bold leading-6">
+          <h4 className="inline-flex border-b-6 border-nav text-xl font-bold leading-6 xl:text-4xl">
             {t('footer_live_streaming')}
           </h4>
         </div>

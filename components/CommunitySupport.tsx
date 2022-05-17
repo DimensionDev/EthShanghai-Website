@@ -20,9 +20,9 @@ export const CommunitySupport = () => {
         <h4 className="inline-flex border-b-6 border-nav text-4xl font-bold leading-6">{t('community_support')}</h4>
       </div>
       <div className="flex flex-col gap-y-6">
-        <div className="grid grid-cols-5 grid-rows-2 gap-4">
+        <div className="grid grid-cols-3 grid-rows-3 gap-4 xl:grid-cols-5 xl:grid-rows-2">
           {config.map((x) => (
-            <div className="inline-flex justify-center rounded-lg bg-support px-7 py-8" style={{ flex: '0 0 24%' }}>
+            <div className="inline-flex justify-center rounded-lg bg-support px-2 py-3 xl:px-7 xl:py-8">
               <img src={x} />
             </div>
           ))}

@@ -34,7 +34,7 @@ export const Hosts = () => {
       <div className="mb-20">
         <HeaderSection content={t('hosts')} />
       </div>
-      <div className="mt-16 flex flex-wrap gap-7 px-16">
+      <div className="mt-24 grid grid-cols-2 grid-rows-2 gap-9 xl:grid-cols-4 xl:grid-rows-1 xl:px-16">
         {hostsConfig.map((x) => (
           <HumanCard
             name={x.name}

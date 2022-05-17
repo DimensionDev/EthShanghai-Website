@@ -18,8 +18,8 @@ export const PartnerCard = ({
   height = 374,
 }: PartnerCardProps) => {
   return (
-    <div className={`${backgroundClass} rounded-2.5xl bg-speaker-master text-white`}>
-      <div className="p-6">
+    <div className={`${backgroundClass} rounded-xl bg-speaker-master text-white xl:rounded-2.5xl`}>
+      <div className="p-3 xl:p-6">
         <div>
           <img src={image} alt={'TODO'} />
         </div>

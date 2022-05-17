@@ -17,14 +17,12 @@ export const MediaSupport = () => {
       <div>
         <h4 className="inline-flex border-b-6 border-nav text-4xl font-bold leading-6">{t('media_support')}</h4>
       </div>
-      <div className="flex flex-col gap-y-6">
-        <div className="flex gap-x-4">
-          {config.map((x) => (
-            <div className="inline-flex rounded-lg bg-support px-7 py-8">
-              <img src={x} />
-            </div>
-          ))}
-        </div>
+      <div className="grid grid-cols-3 grid-rows-2 gap-4 xl:grid-cols-6 xl:grid-rows-1 xl:gap-9">
+        {config.map((x) => (
+          <div className="inline-flex rounded-lg bg-support px-2 py-3 xl:px-7 xl:py-8">
+            <img src={x} />
+          </div>
+        ))}
       </div>
     </footer>
   )

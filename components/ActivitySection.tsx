@@ -20,9 +20,13 @@ const titleDirectionMap = {
 export const ActivitySection = memo<ActivitySectionProps>(({ title, illustration, direction, children }) => {
   return (
     <section className="flex flex-col gap-y-20">
-      <div className={`flex ${titleDirectionMap[direction ?? 'left-to-right']}`}>{title}</div>
-      <div className={`flex ${directionMap[direction ?? 'left-to-right']} gap-x-8`}>
-        <div className="flex items-center">{illustration}</div>
+      <div className={'mx-4 flex xl:mx-0'}>{title}</div>
+      <div className={`flex flex-col-reverse gap-x-8 xl:hidden`}>
+        <div className="flex max-w-full items-center justify-center">{illustration}</div>
+        <div>{children}</div>
+      </div>
+      <div className={`hidden xl:flex ${directionMap[direction ?? 'left-to-right']} gap-x-8`}>
+        <div className="flex max-w-full items-center justify-center">{illustration}</div>
         <div>{children}</div>
       </div>
     </section>

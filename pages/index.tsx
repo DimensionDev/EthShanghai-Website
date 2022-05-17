@@ -19,7 +19,9 @@ const Home: NextPage = () => {
   const { t } = useTranslation('common')
   const activities = [
     {
-      title: <h3 className="header-section inline-flex text-5xl font-bold text-white">{t('activity_summit')}</h3>,
+      title: (
+        <h3 className="header-section inline-flex text-3xl font-bold text-white xl:text-5xl">{t('activity_summit')}</h3>
+      ),
       illustration: (
         <div>
           <Image src={'/images/activity_summit.svg'} width={390} height={320} layout={'fixed'} />
@@ -36,7 +38,9 @@ const Home: NextPage = () => {
     },
     {
       title: (
-        <h3 className="header-section-reverse inline-flex text-5xl font-bold text-white">{t('activity_hackathon')}</h3>
+        <h3 className="header-section-reverse inline-flex text-3xl font-bold text-white xl:text-5xl">
+          {t('activity_hackathon')}
+        </h3>
       ),
       illustration: (
         <div>
@@ -62,12 +66,12 @@ const Home: NextPage = () => {
       <div>
         <Banner>
           <div className="mb-16 flex flex-col justify-center gap-y-4 text-white">
-            <div className="flex gap-x-6">
-              <button className="flex w-1/2 items-center justify-center gap-x-2.5 bg-helper py-3 text-2xl font-bold text-link">
+            <div className="flex flex-col gap-x-6 gap-y-6 xl:flex-row">
+              <button className="flex items-center justify-center gap-x-2.5 bg-helper py-3 text-xl font-bold text-link xl:w-1/2">
                 <Icon name="youtube"></Icon>
                 <span className="inline-flex">Watch Livestream</span>
               </button>
-              <button className="flex w-1/2 justify-center bg-helper py-3 text-2xl font-bold text-link">
+              <button className="flex justify-center bg-helper py-3 text-xl font-bold text-link xl:w-1/2">
                 <span className="inline-flex">Hack with us!</span>
               </button>
             </div>
