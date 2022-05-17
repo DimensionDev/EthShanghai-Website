@@ -1,8 +1,12 @@
+/* TODO: move to local */
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
+  font-family: 'Tomorrow', sans-serif;
   scroll-behavior: smooth;
 }
 
