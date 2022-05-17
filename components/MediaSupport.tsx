@@ -6,7 +6,7 @@ const config = [
   '/images/media-support/chain_catcher.svg',
   '/images/media-support/foresight_news.svg',
   '/images/media-support/panews.svg',
-  '/images/media-support/odaily_news.svg',
+  '/images/media-support/odaily_news.png 1x, /images/media-support/odaily_news@2x.png 2x, /images/media-support/odaily_news@3x.png 3x',
   '/images/media-support/tech_flow.svg',
 ]
 
@@ -20,7 +20,7 @@ export const MediaSupport = () => {
       <div className="grid grid-cols-3 grid-rows-2 gap-4 xl:grid-cols-6 xl:grid-rows-1 xl:gap-9">
         {config.map((x) => (
           <div key={x} className="inline-flex rounded-lg bg-support px-2 py-3 xl:px-7 xl:py-8">
-            <img src={x} />
+            {x.includes('.svg') ? <img src={x} /> : <img srcSet={x} />}
           </div>
         ))}
       </div>

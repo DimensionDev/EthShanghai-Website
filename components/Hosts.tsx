@@ -7,22 +7,23 @@ const hostsConfig = [
   {
     name: 'Zhixiong Pan',
     description: 'Co-Founder of ChainFeeds',
-    image: '/images/hosts/zhixiong_pan.svg',
+    image:
+      '/images/hosts/zhixiong_pan.png 1x, /images/hosts/zhixiong_pan@2x.png 2x, /images/hosts/zhixiong_pan@3x.png 3x',
   },
   {
     name: 'Afra Wang',
     description: 'Web3 Revolution Podcast Host',
-    image: '/images/hosts/afra_wang.svg',
+    image: '/images/hosts/afra_wang.png 1x, /images/hosts/afra_wang@2x.png 2x, /images/hosts/afra_wang@3x.png 3x',
   },
   {
     name: 'Xiang Yao',
     description: 'Founder of Primitives Lane',
-    image: '/images/hosts/xiang_yao.svg',
+    image: '/images/hosts/xiang_yao.png 1x, /images/hosts/xiang_yao@2x.png 2x, /images/hosts/xiang_yao@3x.png 3x',
   },
   {
     name: 'Hehe Shen',
     description: 'Head of Global Growth at Mask Network',
-    image: '/images/hosts/hehe_shen.svg',
+    image: '/images/hosts/hehe_shen.png 1x, /images/hosts/hehe_shen@2x.png 2x, /images/hosts/hehe_shen@3x.png 3x',
   },
 ]
 
