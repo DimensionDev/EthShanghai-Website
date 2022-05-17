@@ -20,9 +20,7 @@ export const PartnerCard = ({
   return (
     <div className={`${backgroundClass} rounded-xl bg-speaker-master text-white xl:rounded-2.5xl`}>
       <div className="p-3 xl:p-6">
-        <div>
-          <img src={image} alt={'TODO'} />
-        </div>
+        <div>{image.includes('.svg') ? <img src={image} alt={'TODO'} /> : <img srcSet={image} alt={'TODO'} />}</div>
         <div className="mt-2.5 flex flex-col justify-center gap-y-3">
           <p className="text-shadow text-center">{description}</p>
           <p className="text-shadow text-center font-bold">{name}</p>

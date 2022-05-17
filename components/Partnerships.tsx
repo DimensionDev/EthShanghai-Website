@@ -13,12 +13,18 @@ const partner1 = [
   {
     name: 'CBCGDF',
     description: 'Co-organizers',
-    image: '/images/partnerships/cbcgdf.svg',
+    image: `/images/partnerships/cbcgdf.png 1x,
+            /images/partnerships/cbcgdf@2x.png 2x,
+            /images/partnerships/cbcgdf@3x.png 3x
+    `,
   },
   {
     name: 'Business China',
     description: 'Co-organizers',
-    image: '/images/partnerships/business_china.svg',
+    image: `/images/partnerships/business_china.png 1x,
+            /images/partnerships/business_china@2x.png 2x,
+            /images/partnerships/business_china@3x.png 3x
+    `,
   },
   {
     name: 'Ethereum Foundation',
