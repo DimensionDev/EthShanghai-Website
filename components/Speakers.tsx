@@ -12,17 +12,17 @@ const speakerMasters = [
   {
     name: 'Tin Pei Ling',
     description: 'CEO of Business China',
-    image: '/images/speakers/terry_edward_branstad.svg',
+    image: '/images/speakers/tin_pei_ling.svg',
   },
   {
     name: 'Vitalik Buterin',
     description: 'Co-founder of Ethereum',
-    image: '/images/speakers/terry_edward_branstad.svg',
+    image: '/images/speakers/vitalik_buterin.svg',
   },
   {
     name: 'Joseph Lubin',
     description: 'Founder & CEO of ConsenSys',
-    image: '/images/speakers/terry_edward_branstad.svg',
+    image: '/images/speakers/joseph_lubin.svg',
   },
 ]
 
@@ -93,7 +93,7 @@ export const Speakers = () => {
   const { t } = useTranslation('common')
 
   return (
-    <div>
+    <div id="speakers">
       <div className="mb-20">
         <HeaderSection content={t('speakers')} addition={t('speakers_title_note')} />
       </div>

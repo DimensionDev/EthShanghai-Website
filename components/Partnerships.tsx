@@ -44,7 +44,7 @@ export const Partnerships = () => {
   const { t } = useTranslation('common')
 
   return (
-    <div>
+    <div id="partnerships">
       <div className="mb-20">
         <HeaderSection content={t('partnerships')} />
       </div>

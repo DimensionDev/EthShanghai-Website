@@ -24,7 +24,9 @@ interface NavItem {
 
 const NavItem = ({ item }: { item: NavItem }) => {
   return (
-    <div className="box-content inline-flex h-full items-center hover:border-b-4 hover:border-nav" key={item.name}>
+    <div
+      className="inline-flex h-full items-center hover:border-y-4 hover:border-b-nav hover:border-t-transparent"
+      key={item.name}>
       <a
         href={item.href}
         className={classNames(item.current ? '' : '', 'rounded-md px-3 py-2 font-medium font-medium text-white')}
@@ -44,9 +46,9 @@ export default function Navigation() {
     () => [
       { name: t('menu_about_this_summit'), href: '#', current: true },
       { name: t('menu_hackathon'), href: '#', current: false },
-      { name: t('menu_summit_agenda'), href: '#', current: false },
-      { name: t('menu_speakers'), href: '#', current: false },
-      { name: t('menu_partnership'), href: '#', current: false },
+      { name: t('menu_summit_agenda'), href: '#summit-agenda', current: false },
+      { name: t('menu_speakers'), href: '#speakers', current: false },
+      { name: t('menu_partnership'), href: '#partnerships', current: false },
       { name: t('menu_Venue'), href: '#', current: false },
       { name: t('menu_contact_us'), href: '#', current: false },
     ],
