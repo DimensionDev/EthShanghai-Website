@@ -63,7 +63,7 @@ const Home: NextPage = () => {
 
   return (
     <div className="flex min-h-screen flex-col bg-main">
-      <header>
+      <header className="relative z-20">
         <Navigation />
       </header>
       <div>
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
           </div>
         </Banner>
       </div>
-      <main className="container m-auto p-8">
+      <main className="container m-auto px-8">
         <section id="about-summit" className="flex flex-col gap-y-48">
           {activities.map((x, index) => (
             <ActivitySection key={index} title={x.title} illustration={x.illustration} direction={x.direction as any}>
@@ -99,7 +99,7 @@ const Home: NextPage = () => {
       <section className="mt-28">
         <Speakers />
       </section>
-      <main className="container m-auto p-8">
+      <main className="container m-auto px-8">
         <section className="mt-36">
           <Hosts />
         </section>

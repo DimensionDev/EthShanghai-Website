@@ -1,11 +1,12 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment, useMemo } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { Logo } from './Logo'
+import { MenuIcon } from './MenuIcon'
+import { CloseIcon } from './CloseIcon'
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -58,13 +59,13 @@ export default function Navigation() {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="relative z-10 h-26 w-full bg-nav/[0.8] sm:px-6 lg:px-9">
+          <div className="relative z-10 h-26 w-full bg-nav/[0.8] px-4 lg:px-9">
             <div className="relative flex h-full items-center justify-between">
               <div className="flex h-full flex-1 items-center justify-start sm:items-stretch sm:justify-between">
                 <div className="flex h-full flex-shrink-0 items-center">
                   <Logo />
                 </div>
-                <div className="hidden sm:ml-6 sm:block">
+                <div className="hidden sm:ml-6 lg:block">
                   <div className="flex h-full space-x-4">
                     {navigation.map((item) => (
                       <NavItem key={item.name} item={item} />
@@ -80,9 +81,9 @@ export default function Navigation() {
                   </div>
                 </div>
               </div>
-              <div className="flex hidden h-full items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 md:hidden">
+              <div className="flex h-full items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 lg:hidden">
                 <Menu as="div" className="relative ml-3">
-                  <div className="flex items-center sm:hidden">
+                  <div className="flex items-center">
                     <div className="flex w-16 items-center justify-center text-right">
                       <Link
                         className="rounded-md text-sm font-medium text-white hover:bg-gray-300"
@@ -91,12 +92,8 @@ export default function Navigation() {
                         <a className="text-white">{localeButtonContent}</a>
                       </Link>
                     </div>
-                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white">
-                      {open ? (
-                        <XIcon className="block h-6 w-6" aria-hidden="true" />
-                      ) : (
-                        <MenuIcon className="block h-6 w-6" aria-hidden="true" />
-                      )}
+                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-main hover:text-white">
+                      {open ? <CloseIcon aria-hidden="true" /> : <MenuIcon aria-hidden="true" />}
                     </Disclosure.Button>
                   </div>
                 </Menu>
@@ -104,7 +101,7 @@ export default function Navigation() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="bg-main lg:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
                 <Disclosure.Button

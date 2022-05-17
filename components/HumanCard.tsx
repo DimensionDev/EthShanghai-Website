@@ -17,7 +17,7 @@ export const HumanCard = ({ name, description, image, backgroundClass, width = 3
           <img src={image} alt={'TODO'} />
         </div>
         <div className="mt-2.5 flex flex-col justify-center gap-y-3">
-          <p className="text-shadow text-center text-2xl font-bold">{name}</p>
+          <p className="text-shadow text-center text-xl font-bold xl:text-2xl">{name}</p>
           <p className="text-shadow text-center">{description}</p>
         </div>
       </div>
