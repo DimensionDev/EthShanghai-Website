@@ -18,6 +18,9 @@ module.exports = {
       borderColor: {
         nav: '#00FFC2',
       },
+      borderWidth: {
+        6: '6px',
+      },
       backgroundImage: {
         'hero-pattern': "url('/images/banner.png')",
         'hero-pattern-2x': "url('/images/banner_2x.png')",

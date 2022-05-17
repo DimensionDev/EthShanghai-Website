@@ -7,6 +7,7 @@ import { useTranslation } from 'next-i18next'
 import { ActivitySection } from '../components/ActivitySection'
 import { ReactNode } from 'react'
 import { SummitAgenda } from '../components/SummitAgenda'
+import { Footer } from '../components/Footer'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common')
@@ -68,15 +69,9 @@ const Home: NextPage = () => {
         </section>
       </main>
 
-      <footer className="flex h-24 w-full items-center justify-center">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://mask.io"
-          target="_blank"
-          rel="noopener noreferrer">
-          Powered by Mask Network
-        </a>
-      </footer>
+      <section>
+        <Footer />
+      </section>
     </div>
   )
 }
