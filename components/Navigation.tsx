@@ -59,7 +59,7 @@ export default function Navigation() {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="relative z-10 h-26 w-full bg-nav/[0.8] px-4 lg:px-9">
+          <div className="relative z-10 h-26 w-full bg-nav/[0.8] px-4 lg:px-9" style={{ backdropFilter: 'blur(8px)' }}>
             <div className="relative flex h-full items-center justify-between">
               <div className="flex h-full flex-1 items-center justify-start sm:items-stretch sm:justify-between">
                 <div className="flex h-full flex-shrink-0 items-center">
@@ -84,7 +84,7 @@ export default function Navigation() {
               <div className="flex h-full items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 lg:hidden">
                 <Menu as="div" className="relative ml-3">
                   <div className="flex items-center">
-                    <div className="flex w-16 items-center justify-center text-right">
+                    <div className="mr-2 flex w-16 items-center justify-center text-right ">
                       <Link
                         className="rounded-md text-sm font-medium text-white hover:bg-gray-300"
                         href="/"
