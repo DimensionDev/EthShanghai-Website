@@ -75,12 +75,13 @@ const speaker = [
   {
     name: 'Ling Zhang',
     description: 'Ling Zhang',
-    image: '/images/speakers/ling_zhang.svg',
+    image:
+      '/images/speakers/ling_zhang.png 1x, /images/speakers/ling_zhang@2x.png 2x, /images/speakers/ling_zhang@3x.png 3x',
   },
   {
     name: 'Zhe Sun',
     description: '',
-    image: '/images/speakers/zhe_sun.svg',
+    image: '/images/speakers/zhe_sun.png 1x, /images/speakers/zhe_sun@2x.png 2x, /images/speakers/zhe_sun@3x.png 3x',
   },
   {
     name: 'To Be Announced',
