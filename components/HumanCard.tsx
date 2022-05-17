@@ -13,7 +13,7 @@ export const HumanCard = ({ name, description, image, backgroundClass, width = 3
   return (
     <div className={`${backgroundClass} rounded-xl bg-speaker-master text-white shadow-card xl:rounded-2.5xl`}>
       <div className="p-3 xl:p-6">
-        <div>
+        <div className="flex justify-center">
           <div>{image.includes('.svg') ? <img src={image} alt={name} /> : <img srcSet={image} alt={name} />}</div>
         </div>
         <div className="mt-2.5 flex flex-col justify-center gap-y-3">
