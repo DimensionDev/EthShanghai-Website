@@ -10,7 +10,7 @@ html {
 }
 
 .first-letter:first-letter {
-  @apply text-4xl;
+  @apply text-3xl;
 }
 
 .header-section {

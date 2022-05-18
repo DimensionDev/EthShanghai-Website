@@ -275,7 +275,7 @@ export const SummitAgenda = () => {
                 <div
                   key={t.during}
                   className="flex flex-col gap-4 bg-footer p-6 xl:flex-row xl:gap-x-12 xl:bg-transparent xl:p-0">
-                  <div className="flex-shrink-0 flex-grow-0 text-left xl:w-1/3 xl:text-right">
+                  <div className="flex-shrink-0 flex-grow-0 text-left font-bold xl:w-1/3 xl:text-right">
                     <time className="inline-flex text-time">{t.during}</time>
                   </div>
                   <div className={'flex-1 break-all'}>{t.content}</div>

@@ -103,7 +103,7 @@ const Home: NextPage = () => {
         </Banner>
       </div>
       <main className="container m-auto px-8">
-        <section id="about-summit" className="flex flex-col gap-y-48">
+        <section id="about-summit" className="flex flex-col gap-y-32">
           {activities.map((x, index) => (
             <ActivitySection key={index} title={x.title} illustration={x.illustration} direction={x.direction as any}>
               {x.content}
