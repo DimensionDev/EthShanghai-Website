@@ -80,6 +80,8 @@
   "speaker_zhe_sun_intro": "上海财经大学哲学系教授",
   "speaker_jin_hai_luo": "罗金海",
   "speaker_jin_hai_luo_intro": "量子学派创始人",
+  "speaker_wang_yang": "汪洋",
+  "speaker_wang_yang_intro": "UIUC 计算机科学系教授",
   "speaker_to_be_announced": "重磅嘉宾 敬请期待",
   "speaker_to_be_announced_intro": "",
   "host_zhixiong_pan": "潘致雄",
@@ -89,5 +91,9 @@
   "host_xiang_yao": "姚翔",
   "host_xiang_yao_intro": "原语里弄发起人",
   "host_hehe_shen": "沈赫赫",
-  "host_hehe_shen_intro": "Mask Network 全球增长负责人"
+  "host_hehe_shen_intro": "Mask Network 全球增长负责人",
+  "host": "主办方",
+  "co_organizers": "协办方",
+  "lead_sponsor": "首席赞助商",
+  "co_sponsor": "赞助商"
 }

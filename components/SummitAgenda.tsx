@@ -89,9 +89,9 @@ const agendaConfig = (t: (key: string) => string) => [
         content: (
           <div>
             <p>
-              CEO Fireside Chat – <span className="out-link inline-flex">Wu Xiao</span>
+              CEO Fireside Chat – <span className="out-link inline-flex">{t('speaker_wu_xiao')}</span>
             </p>
-            <p>CEO of White Matrix, Founder of ChainIDE</p>
+            <p>{t('speaker_wu_xiao_intro')}</p>
           </div>
         ),
       },
@@ -180,7 +180,8 @@ const agendaConfig = (t: (key: string) => string) => [
         content: (
           <div>
             <p>
-              CEO Fireside Chat – <span className="out-link inline-flex">Joseph Lubin</span>, Founder & CEO of ConsenSys
+              CEO Fireside Chat – <span className="out-link inline-flex">{t('speaker_joseph_lubin')}</span>,{' '}
+              {t('speaker_joseph_lubin_intro')}
             </p>
             <p>
               <b>{t('agenda_day1_8')}</b>
@@ -208,9 +209,12 @@ const agendaConfig = (t: (key: string) => string) => [
           <div>
             <p>Polygon Fireside Chat</p>
             <p>
-              <span className="out-link inline-flex">Sandeep Nailwal</span>, Co-founder of Polygon Technology
+              <span className="out-link inline-flex">{t('speaker_sandeep_nailwal')}</span>,{' '}
+              {t('speaker_sandeep_nailwal_intro')}
             </p>
-            <p>Dalip Tyagi, SVP and Head of Developer Relations of Polygon Technology</p>
+            <p>
+              {t('speaker_dalip_tyagi')}, {t('speaker_dalip_tyagi_intro')}
+            </p>
           </div>
         ),
       },
@@ -227,16 +231,14 @@ const agendaConfig = (t: (key: string) => string) => [
               <span className="out-link inline-flex">Afra Wang</span>
             </p>
             <p className="mb-2">
-              <span className="out-link inline-flex">{t('speaker_ling_zhang')}</span> , {t('speaker_ling_zhang_intro')}
+              <span className="out-link inline-flex">{t('speaker_nathan_schneider')}</span> ,{' '}
+              {t('speaker_nathan_schneider_intro')}
             </p>
             <p className="mb-2">
-              <span className="out-link inline-flex">{t('speaker_zhe_sun')}</span>, {t('speaker_ling_zhang_intro')}
+              <span className="out-link inline-flex">{t('speaker_chen_qiufan')}</span>, {t('speaker_chen_qiufan_intro')}
             </p>
             <p className="mb-2">
-              <span className="out-link inline-flex">{t('speaker_jin_hai_luo')}</span>, {t('speaker_jin_hai_luo_intro')}
-            </p>
-            <p className="mb-2">
-              <span className="out-link inline-flex">{t('speaker_qidong_sun')}</span>, {t('speaker_qidong_sun_intro')}
+              <span className="out-link inline-flex">{t('speaker_wang_yang')}</span>, {t('speaker_wang_yang_intro')}
             </p>
           </div>
         ),

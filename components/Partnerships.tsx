@@ -4,16 +4,16 @@ import Image from 'next/image'
 import { HumanCard } from './HumanCard'
 import { PartnerCard } from './PartnerCard'
 
-const partner1 = [
+const partner1 = (t: any) => [
   {
     name: 'Mask Network',
-    description: 'Host',
+    description: t('host'),
     image: '/images/partnerships/mask.svg',
     link: 'https://mask.io',
   },
   {
     name: 'CBCGDF',
-    description: 'Co-organizers',
+    description: t('co_organizers'),
     image: `/images/partnerships/cbcgdf.png 1x,
             /images/partnerships/cbcgdf@2x.png 2x,
             /images/partnerships/cbcgdf@3x.png 3x
@@ -22,7 +22,7 @@ const partner1 = [
   },
   {
     name: 'Business China',
-    description: 'Co-organizers',
+    description: t('co_organizers'),
     image: `/images/partnerships/business_china.png 1x,
             /images/partnerships/business_china@2x.png 2x,
             /images/partnerships/business_china@3x.png 3x
@@ -31,22 +31,22 @@ const partner1 = [
   },
   {
     name: 'Ethereum Foundation',
-    description: 'Co-organizers',
+    description: t('co_organizers'),
     image: '/images/partnerships/ethereum_foundation.svg',
     link: 'https://ethereum.org/en/',
   },
 ]
 
-const partner2 = [
+const partner2 = (t: any) => [
   {
     name: 'ChainIDE',
-    description: 'Lead Sponsor',
+    description: t('lead_sponsor'),
     image: '/images/partnerships/chain_ide.svg',
     link: 'https://chainide.com/',
   },
   {
     name: 'Mecha Morphing',
-    description: 'Co-Sponsor',
+    description: t('co_sponsor'),
     image: `/images/partnerships/mecha_morphing.png 1x,
             /images/partnerships/mecha_morphing@2x.png 2x,
             /images/partnerships/mecha_morphing@3x.png 3x
@@ -64,7 +64,7 @@ export const Partnerships = () => {
         <HeaderSection content={t('partnerships')} />
       </div>
       <div className="mt-16 grid hidden grid-cols-4 grid-rows-2 gap-7 px-16 xl:grid">
-        {partner1.map((x) => (
+        {partner1(t).map((x) => (
           <PartnerCard
             name={x.name}
             description={x.description}
@@ -75,7 +75,7 @@ export const Partnerships = () => {
           />
         ))}
         <div></div>
-        {partner2.map((x) => (
+        {partner2(t).map((x) => (
           <PartnerCard
             name={x.name}
             description={x.description}
@@ -88,7 +88,7 @@ export const Partnerships = () => {
         <div></div>
       </div>
       <div className="mt-16 grid grid-cols-2 grid-rows-2 gap-4 xl:hidden">
-        {partner1.map((x) => (
+        {partner1(t).map((x) => (
           <PartnerCard
             name={x.name}
             description={x.description}
@@ -98,7 +98,7 @@ export const Partnerships = () => {
             link={x.link}
           />
         ))}
-        {partner2.map((x) => (
+        {partner2(t).map((x) => (
           <PartnerCard
             name={x.name}
             description={x.description}

@@ -80,6 +80,8 @@
   "speaker_zhe_sun_intro": "Founder of Quantum Schoo",
   "speaker_jin_hai_luo": "Jinhai Luo",
   "speaker_jin_hai_luo_intro": "Founder of Quantum School",
+  "speaker_wang_yang": "Yang Wang",
+  "speaker_wang_yang_intro": "Professor of University of Illinois at Urbana-Champaign",
   "speaker_to_be_announced": "To Be Announced",
   "speaker_to_be_announced_intro": "",
   "host_zhixiong_pan": "Zhixiong Pan",
@@ -89,5 +91,9 @@
   "host_xiang_yao": "Xiang Yao",
   "host_xiang_yao_intro": "Founder of Primitives Lane",
   "host_hehe_shen": "Hehe Shen",
-  "host_hehe_shen_intro": "Head of Global Growth at Mask Network"
+  "host_hehe_shen_intro": "Head of Global Growth at Mask Network",
+  "co_organizers": "Co-organizers",
+  "host": "Host",
+  "lead_sponsor": "Lead Sponsor",
+  "co_sponsor": "Co-Sponsor"
 }
