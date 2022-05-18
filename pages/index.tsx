@@ -32,8 +32,6 @@ const Home: NextPage = () => {
       content: (
         <div className="flex flex-col gap-y-6">
           <p className="first-letter text-lg text-white">{t('activity_summit_p_1')}</p>
-          <p className="text-lg text-white">{t('activity_summit_p_2')}</p>
-          <p className="text-lg text-white">{t('activity_summit_p_3')}</p>
         </div>
       ),
     },
@@ -53,7 +51,6 @@ const Home: NextPage = () => {
         <div className="flex flex-col gap-y-6">
           <p className="first-letter text-lg text-white">{t('activity_hackathon_p_1')}</p>
           <p className="text-lg text-white">{t('activity_hackathon_p_2')}</p>
-          <p className="text-lg text-white">{t('activity_hackathon_p_3')}</p>
           <a
             href="https://hackathon.ethshanghai.org/"
             target="_blank"
@@ -97,7 +94,7 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div>
-              <p className="text-center">Time: 05/20/2018 08:00 am (GMT+8)</p>
+              <p className="text-center">Time: May 20, 2022 09:00 - 23:10 (GMT+8)</p>
             </div>
           </div>
         </Banner>

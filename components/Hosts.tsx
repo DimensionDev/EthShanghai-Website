@@ -3,26 +3,26 @@ import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import { HumanCard } from './HumanCard'
 
-const hostsConfig = [
+const hostsConfig = (t: any) => [
   {
-    name: 'Zhixiong Pan',
-    description: 'Co-Founder of ChainFeeds',
+    name: t('host_zhixiong_pan'),
+    description: t('host_zhixiong_pan_intro'),
     image:
       '/images/hosts/zhixiong_pan.png 1x, /images/hosts/zhixiong_pan@2x.png 2x, /images/hosts/zhixiong_pan@3x.png 3x',
   },
   {
-    name: 'Afra Wang',
-    description: 'Web3 Revolution Podcast Host',
+    name: t('host_afra_wang'),
+    description: t('host_afra_wang_intro'),
     image: '/images/hosts/afra_wang.png 1x, /images/hosts/afra_wang@2x.png 2x, /images/hosts/afra_wang@3x.png 3x',
   },
   {
-    name: 'Xiang Yao',
-    description: 'Founder of Primitives Lane',
+    name: t('host_xiang_yao'),
+    description: t('host_xiang_yao_intro'),
     image: '/images/hosts/xiang_yao.png 1x, /images/hosts/xiang_yao@2x.png 2x, /images/hosts/xiang_yao@3x.png 3x',
   },
   {
-    name: 'Hehe Shen',
-    description: 'Head of Global Growth at Mask Network',
+    name: t('host_hehe_shen'),
+    description: t('host_hehe_shen_intro'),
     image: '/images/hosts/hehe_shen.png 1x, /images/hosts/hehe_shen@2x.png 2x, /images/hosts/hehe_shen@3x.png 3x',
   },
 ]
@@ -36,7 +36,7 @@ export const Hosts = () => {
         <HeaderSection content={t('hosts')} direction="reverse" />
       </div>
       <div className="mt-24 grid grid-cols-2 grid-rows-2 gap-6 xl:grid-cols-4 xl:grid-rows-1 xl:gap-9 xl:px-16">
-        {hostsConfig.map((x) => (
+        {hostsConfig(t).map((x) => (
           <HumanCard
             name={x.name}
             description={x.description}
