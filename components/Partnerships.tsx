@@ -87,7 +87,7 @@ export const Partnerships = () => {
         ))}
         <div></div>
       </div>
-      <div className="mt-16 grid grid-cols-2 grid-rows-2 gap-6 xl:hidden">
+      <div className="mt-16 grid grid-cols-2 grid-rows-2 gap-4 xl:hidden">
         {partner1.map((x) => (
           <PartnerCard
             name={x.name}

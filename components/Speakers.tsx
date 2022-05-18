@@ -111,7 +111,7 @@ export const Speakers = () => {
         <HeaderSection content={t('speakers')} addition={t('speakers_title_note')} />
       </div>
       <div className="m-auto flex justify-center bg-[#1E0054] py-12 px-8">
-        <div className="container grid grid-cols-2 grid-rows-2 gap-6 xl:grid-cols-4 xl:grid-rows-1 xl:gap-9">
+        <div className="hack-speak container grid grid-cols-2 grid-rows-2 gap-4 xl:grid-cols-4 xl:grid-rows-1 xl:gap-9">
           {speakerMasters(t).map((x) => (
             <HumanCard
               name={x.name}
@@ -124,7 +124,7 @@ export const Speakers = () => {
         </div>
       </div>
       <div className="container m-auto flex justify-center px-8">
-        <div className="container mt-12 grid grid-cols-2 grid-rows-2 gap-6 xl:grid-cols-4 xl:grid-rows-3 xl:gap-9 xl:px-20">
+        <div className="container mt-12 grid grid-cols-2 grid-rows-2 gap-4 xl:grid-cols-4 xl:grid-rows-3 xl:gap-9 xl:px-20">
           {speaker(t).map((x) => (
             <HumanCard
               name={x.name}

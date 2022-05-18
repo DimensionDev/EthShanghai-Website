@@ -19,6 +19,11 @@ html {
   @apply pl-6;
 }
 
+.hack-speak > div:first-child p {
+  @apply text-base;
+  @apply xl:text-xl;
+}
+
 .header-section:after {
   content: '';
   display: inline-flex;

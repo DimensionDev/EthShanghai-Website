@@ -15,7 +15,7 @@ export const PartnerCard = ({ name, description, image, backgroundClass, link }:
         <div className="flex justify-center">
           {image.includes('.svg') ? <img src={image} alt={name} /> : <img srcSet={image} alt={name} />}
         </div>
-        <div className="mt-2.5 flex flex-col justify-center gap-y-3">
+        <div className="mt-2.5 flex flex-col justify-center gap-y-2 xl:gap-y-3">
           <p className="text-shadow text-center">{description}</p>
           <p className="text-shadow text-center font-bold">{name}</p>
         </div>
