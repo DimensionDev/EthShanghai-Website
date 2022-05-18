@@ -6,7 +6,7 @@ import { PartnerCard } from './PartnerCard'
 
 const partner1 = [
   {
-    name: 'Mask',
+    name: 'Mask Network',
     description: 'Host',
     image: '/images/partnerships/mask.svg',
     link: '',
@@ -70,7 +70,7 @@ export const Partnerships = () => {
             description={x.description}
             image={x.image}
             key={x.name}
-            backgroundClass={'partner'}
+            backgroundClass={'bg-partner'}
             link={x.link}
           />
         ))}
@@ -81,7 +81,7 @@ export const Partnerships = () => {
             description={x.description}
             image={x.image}
             key={x.name}
-            backgroundClass={'partner'}
+            backgroundClass={'bg-partner'}
             link={x.link}
           />
         ))}
@@ -94,7 +94,7 @@ export const Partnerships = () => {
             description={x.description}
             image={x.image}
             key={x.name}
-            backgroundClass={'partner'}
+            backgroundClass={'bg-partner'}
             link={x.link}
           />
         ))}
@@ -104,7 +104,7 @@ export const Partnerships = () => {
             description={x.description}
             image={x.image}
             key={x.name}
-            backgroundClass={'partner'}
+            backgroundClass={'bg-partner'}
             link={x.link}
           />
         ))}

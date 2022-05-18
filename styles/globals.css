@@ -91,3 +91,15 @@ html {
 .text-shadow {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
+
+.hover-shadow:hover {
+  box-shadow: 0 6px 12px rgba(0, 255, 194, 0.4);
+  backdrop-filter: blur(16px);
+}
+
+.hover-card:hover {
+  box-shadow: 4px 4px 12px rgba(2, 253, 196, 0.3);
+  text-decoration: none;
+  transform: translateY(-0.05rem);
+  backdrop-filter: blur(20px);
+}

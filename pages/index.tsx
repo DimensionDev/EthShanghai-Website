@@ -56,7 +56,7 @@ const Home: NextPage = () => {
           <a
             href="https://hackathon.ethshanghai.org/"
             target="_blank"
-            className="inline-flex w-36 justify-center bg-helper py-3 text-xl font-bold text-link">
+            className="hover-shadow inline-flex w-36 justify-center bg-helper py-3 text-xl font-bold text-link">
             <span className="inline-flex">{t('button_more_details')}</span>
           </a>
         </div>
@@ -76,14 +76,14 @@ const Home: NextPage = () => {
               <a
                 href="https://youtu.be/8l67wJ3Wcbc"
                 target="_blank"
-                className="flex items-center justify-center gap-x-2.5 bg-helper py-3 text-xl font-bold text-link xl:w-1/2">
+                className="hover-shadow flex items-center justify-center gap-x-2.5 bg-helper py-3 text-xl font-bold text-link xl:w-1/2">
                 <Icon name="youtube"></Icon>
                 <span className="inline-flex">{t('button_watch_youtube')}</span>
               </a>
               <a
                 href="https://hackathon.ethshanghai.org/"
                 target="_blank"
-                className="flex justify-center bg-helper py-3 text-xl font-bold text-link xl:w-1/2">
+                className="hover-shadow flex justify-center bg-helper py-3 text-xl font-bold text-link xl:w-1/2">
                 <span className="inline-flex">{t('button_hack_with_me')}</span>
               </a>
             </div>
