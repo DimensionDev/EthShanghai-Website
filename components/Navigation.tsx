@@ -13,7 +13,7 @@ function classNames(...classes: string[]) {
 }
 
 const LocaleMap: Record<string, string> = {
-  en: 'Chinese',
+  en: '中文',
   zh: 'English',
 }
 

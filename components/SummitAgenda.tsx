@@ -96,7 +96,7 @@ const agendaConfig = (t: (key: string) => string) => [
         ),
       },
       {
-        during: '12:30 ~ 13:30',
+        during: '12:00 ~ 13:30',
         content: (
           <div>
             <p>{t('agenda_break')}</p>
@@ -131,10 +131,6 @@ const agendaConfig = (t: (key: string) => string) => [
             <p>
               <b>{t('agenda_day1_6')}</b>
             </p>
-            <p className="mt-2">{t('agenda_roundtable_discussion')}</p>
-            <p>
-              <b>{t('agenda_day1_7')}</b>
-            </p>
           </div>
         ),
       },
@@ -142,9 +138,13 @@ const agendaConfig = (t: (key: string) => string) => [
         during: '14:30 ~ 15:30',
         content: (
           <div>
-            <p className="mb-3">{t('agenda_host')}</p>
+            <p>{t('agenda_roundtable_discussion')}</p>
+            <p>
+              <b>{t('agenda_day1_7')}</b>
+            </p>
+            <p className="mb-3 mt-4">{t('agenda_host')}</p>
             <p className="mb-4">
-              <span className="out-link inline-flex">Xiang Yao</span>
+              <span className="out-link inline-flex">{t('host_xiang_yao')}</span>
             </p>
             <p className="mb-4">{t('agenda_guests')}</p>
             <p className="mb-2">
