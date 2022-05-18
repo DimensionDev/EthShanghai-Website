@@ -70,8 +70,8 @@ const Home: NextPage = () => {
       <Head>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@realMaskNetwork" />
-        <meta name="twitter:title" content="ETH SHANGHAI - Web 3.0 Summit Crypto City" />
-        <meta name="twitter:description" content="Web 3.0 Summit Crypto City" />
+        <meta name="twitter:title" content="ETH SHANGHAI 2022" />
+        <meta name="twitter:description" content="Web 3.0 Developer Summit, taking place on May 20, 2022" />
         <meta name="twitter:image" content="https://eth-shanghai-website.vercel.app/share-card.jpg" />
         <meta property="og:image" content="https://eth-shanghai-website.vercel.app/share-card.jpg" />
       </Head>
