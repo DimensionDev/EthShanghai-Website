@@ -91,7 +91,7 @@ const speaker = [
   },
   {
     name: 'Zhe Sun',
-    description: '',
+    description: 'Founder of Quantum Schoo',
     image: '/images/speakers/zhe_sun.png 1x, /images/speakers/zhe_sun@2x.png 2x, /images/speakers/zhe_sun@3x.png 3x',
   },
   {
