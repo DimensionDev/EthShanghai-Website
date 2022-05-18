@@ -3,15 +3,16 @@ import { HeaderSection } from './HeaderSection'
 
 const agendaConfig = (t: (key: string) => string) => [
   {
-    during: 'May 20, 2022 AM (GMT+8)',
+    during: t('summit_time_am'),
     subTimes: [
       {
         during: '09:00 ~ 09:10',
         content: (
           <div>
             <p className="break-all">
-              {t('agenda_opening_remarks')} – <span className="out-link inline-flex">Terry Branstad</span>, Former U.S.
-              Ambassador to China
+              {t('agenda_opening_remarks')} –{' '}
+              <span className="out-link inline-flex">{t('speaker_terry_edward_branstad')}</span>,{' '}
+              {t('speaker_terry_edward_branstad_intro')}
             </p>
             <p>
               <b>{t('agenda_day1_1')}</b>
@@ -35,8 +36,9 @@ const agendaConfig = (t: (key: string) => string) => [
         content: (
           <div>
             <p>
-              {t('agenda_keynote_speech')} – <span className="out-link inline-flex">Vitalik Buterin</span>, Co-founder
-              of Ethereum
+              {t('agenda_keynote_speech')} –{' '}
+              <span className="out-link inline-flex">{t('speaker_vitalik_buterin')}</span>,{' '}
+              {t('speaker_vitalik_buterin_intro')}
             </p>
             <p>
               <b>{t('agenda_day1_3')}</b>
@@ -65,8 +67,8 @@ const agendaConfig = (t: (key: string) => string) => [
         content: (
           <div>
             <p>
-              {t('agenda_keynote_speech')} – <span className="out-link inline-flex">Tin Pei Ling</span>, CEO of Business
-              China
+              {t('agenda_keynote_speech')} – <span className="out-link inline-flex">{t('speaker_tin_pei_ling')}</span>,{' '}
+              {t('speaker_tin_pei_ling_intro')}
             </p>
             <p>
               <b>{t('agenda_day1_4')}</b>
@@ -104,7 +106,7 @@ const agendaConfig = (t: (key: string) => string) => [
     ],
   },
   {
-    during: 'May 20, 2022 PM (GMT+8)',
+    during: t('summit_time_pm'),
     subTimes: [
       {
         during: '13:30 ~ 14:00',
@@ -122,8 +124,9 @@ const agendaConfig = (t: (key: string) => string) => [
         content: (
           <div>
             <p>
-              {t('agenda_keynote_speech')} – <span className="out-link inline-flex">Illia Polosukhin</span>, Co-founder
-              of NEAR
+              {t('agenda_keynote_speech')} –{' '}
+              <span className="out-link inline-flex">{t('speaker_illia_polosukhin')}</span>,{' '}
+              {t('speaker_illia_polosukhin_intro')}
             </p>
             <p>
               <b>{t('agenda_day1_6')}</b>
@@ -145,16 +148,16 @@ const agendaConfig = (t: (key: string) => string) => [
             </p>
             <p className="mb-4">{t('agenda_guests')}</p>
             <p className="mb-2">
-              <span className="out-link inline-flex">Ling Zhang</span> , Managing Partner at Old Fashion Research
+              <span className="out-link inline-flex">{t('speaker_ling_zhang')}</span> , {t('speaker_ling_zhang_intro')}
             </p>
             <p className="mb-2">
-              <span className="out-link inline-flex">Zhe Sun</span>, Shanghai University of Finance and Economics
+              <span className="out-link inline-flex">{t('speaker_zhe_sun')}</span>, {t('speaker_ling_zhang_intro')}
             </p>
             <p className="mb-2">
-              <span className="out-link inline-flex">Jinhai Luo</span>, Founder of Quantum School
+              <span className="out-link inline-flex">{t('speaker_jin_hai_luo')}</span>, {t('speaker_jin_hai_luo_intro')}
             </p>
             <p className="mb-2">
-              <span className="out-link inline-flex">Qidong Sun</span>, Art Director of MadeIn
+              <span className="out-link inline-flex">{t('speaker_qidong_sun')}</span>, {t('speaker_qidong_sun_intro')}
             </p>
           </div>
         ),
@@ -170,7 +173,7 @@ const agendaConfig = (t: (key: string) => string) => [
     ],
   },
   {
-    during: 'May 20, 2022 Night (GMT+8)',
+    during: t('summit_time_night'),
     subTimes: [
       {
         during: '20:00 ~ 20:30',
@@ -190,8 +193,8 @@ const agendaConfig = (t: (key: string) => string) => [
         content: (
           <div>
             <p>
-              {t('agenda_keynote_speech')} – <span className="out-link inline-flex">Sam Williams</span>, Co-founder and
-              CEO of Arweave
+              {t('agenda_keynote_speech')} – <span className="out-link inline-flex">{t('speaker_sam_williams')}</span>,
+              {t('speaker_sam_williams_intro')}
             </p>
             <p>
               <b>{t('agenda_day1_9')}</b>
@@ -219,21 +222,21 @@ const agendaConfig = (t: (key: string) => string) => [
             <p className="mb-4">
               <b>{t('agenda_day1_10')}</b>
             </p>
-            <p className="mb-4">{t('agenda_host')}</p>
-            <p>
+            <p className="mb-2">{t('agenda_host')}</p>
+            <p className="mb-6">
               <span className="out-link inline-flex">Afra Wang</span>
             </p>
             <p className="mb-2">
-              <span className="out-link inline-flex">Ling Zhang</span> , Managing Partner at Old Fashion Research
+              <span className="out-link inline-flex">{t('speaker_ling_zhang')}</span> , {t('speaker_ling_zhang_intro')}
             </p>
             <p className="mb-2">
-              <span className="out-link inline-flex">Zhe Sun</span>, Shanghai University of Finance and Economics
+              <span className="out-link inline-flex">{t('speaker_zhe_sun')}</span>, {t('speaker_ling_zhang_intro')}
             </p>
             <p className="mb-2">
-              <span className="out-link inline-flex">Jinhai Luo</span>, Founder of Quantum School
+              <span className="out-link inline-flex">{t('speaker_jin_hai_luo')}</span>, {t('speaker_jin_hai_luo_intro')}
             </p>
             <p className="mb-2">
-              <span className="out-link inline-flex">Qidong Sun</span>, Art Director of MadeIn
+              <span className="out-link inline-flex">{t('speaker_qidong_sun')}</span>, {t('speaker_qidong_sun_intro')}
             </p>
           </div>
         ),
@@ -243,8 +246,8 @@ const agendaConfig = (t: (key: string) => string) => [
         content: (
           <div>
             <p>
-              {t('agenda_keynote_speech')} - <span className="out-link inline-flex">Suji Yan</span> , Founder of Mask
-              Network
+              {t('agenda_keynote_speech')} - <span className="out-link inline-flex">{t('speaker_suji_yan')}</span> ,{' '}
+              {t('speaker_suji_yan_intro')}
             </p>
           </div>
         ),
