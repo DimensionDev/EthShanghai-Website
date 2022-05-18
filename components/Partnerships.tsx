@@ -32,10 +32,7 @@ const partner1 = [
   {
     name: 'Ethereum Foundation',
     description: 'Co-organizers',
-    image: `/images/partnerships/mecha_morphing.png 1x,
-            /images/partnerships/mecha_morphing@2x.png 2x,
-            /images/partnerships/mecha_morphing@3x.png 3x
-    `,
+    image: '/images/partnerships/ethereum_foundation.svg',
     link: '',
   },
 ]
@@ -50,7 +47,10 @@ const partner2 = [
   {
     name: 'Mecha Morphing',
     description: 'Co-Sponsor',
-    image: '/images/partnerships/mecha_morphing.svg',
+    image: `/images/partnerships/mecha_morphing.png 1x,
+            /images/partnerships/mecha_morphing@2x.png 2x,
+            /images/partnerships/mecha_morphing@3x.png 3x
+    `,
     link: '',
   },
 ]
