@@ -5,18 +5,10 @@ interface PartnerCardProps {
   description: string
   image: string
   backgroundClass: string
-  width?: number
-  height?: number
+  link: string
 }
 
-export const PartnerCard = ({
-  name,
-  description,
-  image,
-  backgroundClass,
-  width = 320,
-  height = 374,
-}: PartnerCardProps) => {
+export const PartnerCard = ({ name, description, image, backgroundClass, link }: PartnerCardProps) => {
   return (
     <div className={`${backgroundClass} rounded-xl bg-speaker-master text-white xl:rounded-2.5xl`}>
       <div className="p-3 xl:p-6">

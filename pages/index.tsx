@@ -53,9 +53,12 @@ const Home: NextPage = () => {
           <p className="first-letter text-lg text-white">{t('activity_hackathon_p_1')}</p>
           <p className="text-lg text-white">{t('activity_hackathon_p_2')}</p>
           <p className="text-lg text-white">{t('activity_hackathon_p_3')}</p>
-          <button className="inline-flex w-36 justify-center bg-helper py-3 text-xl font-bold text-link">
+          <a
+            href="https://hackathon.ethshanghai.org/"
+            target="_blank"
+            className="inline-flex w-36 justify-center bg-helper py-3 text-xl font-bold text-link">
             <span className="inline-flex">{t('button_more_details')}</span>
-          </button>
+          </a>
         </div>
       ),
     },
@@ -70,13 +73,19 @@ const Home: NextPage = () => {
         <Banner>
           <div className="flex flex-col justify-center gap-y-4 self-end text-white">
             <div className="flex flex-col gap-x-6 gap-y-6 xl:flex-row">
-              <button className="flex items-center justify-center gap-x-2.5 bg-helper py-3 text-xl font-bold text-link xl:w-1/2">
+              <a
+                href="https://youtu.be/8l67wJ3Wcbc"
+                target="_blank"
+                className="flex items-center justify-center gap-x-2.5 bg-helper py-3 text-xl font-bold text-link xl:w-1/2">
                 <Icon name="youtube"></Icon>
                 <span className="inline-flex">{t('button_watch_youtube')}</span>
-              </button>
-              <button className="flex justify-center bg-helper py-3 text-xl font-bold text-link xl:w-1/2">
+              </a>
+              <a
+                href="https://hackathon.ethshanghai.org/"
+                target="_blank"
+                className="flex justify-center bg-helper py-3 text-xl font-bold text-link xl:w-1/2">
                 <span className="inline-flex">{t('button_hack_with_me')}</span>
-              </button>
+              </a>
             </div>
             <div>
               <p className="text-center">Time: 05/20/2018 08:00 am (GMT+8)</p>

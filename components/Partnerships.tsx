@@ -9,6 +9,7 @@ const partner1 = [
     name: 'Mask',
     description: 'Host',
     image: '/images/partnerships/mask.svg',
+    link: '',
   },
   {
     name: 'CBCGDF',
@@ -17,6 +18,7 @@ const partner1 = [
             /images/partnerships/cbcgdf@2x.png 2x,
             /images/partnerships/cbcgdf@3x.png 3x
     `,
+    link: '',
   },
   {
     name: 'Business China',
@@ -25,6 +27,7 @@ const partner1 = [
             /images/partnerships/business_china@2x.png 2x,
             /images/partnerships/business_china@3x.png 3x
     `,
+    link: '',
   },
   {
     name: 'Ethereum Foundation',
@@ -33,6 +36,7 @@ const partner1 = [
             /images/partnerships/mecha_morphing@2x.png 2x,
             /images/partnerships/mecha_morphing@3x.png 3x
     `,
+    link: '',
   },
 ]
 
@@ -41,11 +45,13 @@ const partner2 = [
     name: 'ChainIDE',
     description: 'Lead Sponsor',
     image: '/images/partnerships/chain_ide.svg',
+    link: '',
   },
   {
     name: 'Mecha Morphing',
     description: 'Co-Sponsor',
     image: '/images/partnerships/mecha_morphing.svg',
+    link: '',
   },
 ]
 
@@ -65,8 +71,7 @@ export const Partnerships = () => {
             image={x.image}
             key={x.name}
             backgroundClass={'partner'}
-            width={290}
-            height={339}
+            link={x.link}
           />
         ))}
         <div></div>
@@ -77,8 +82,7 @@ export const Partnerships = () => {
             image={x.image}
             key={x.name}
             backgroundClass={'partner'}
-            width={320}
-            height={339}
+            link={x.link}
           />
         ))}
         <div></div>
@@ -91,8 +95,7 @@ export const Partnerships = () => {
             image={x.image}
             key={x.name}
             backgroundClass={'partner'}
-            width={290}
-            height={339}
+            link={x.link}
           />
         ))}
         {partner2.map((x) => (
@@ -102,8 +105,7 @@ export const Partnerships = () => {
             image={x.image}
             key={x.name}
             backgroundClass={'partner'}
-            width={320}
-            height={339}
+            link={x.link}
           />
         ))}
       </div>

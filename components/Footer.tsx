@@ -12,18 +12,18 @@ export const Footer = () => {
           </h4>
         </div>
         <div className="flex flex-col gap-y-6">
-          <div className="flex gap-x-3">
+          <a href="https://discord.com/invite/n4332P7Dab" target="_blank" className="flex gap-x-3">
             <div className="inline-flex">
               <Icon name={'discord'} />
             </div>
             <p>ETH Shanghai</p>
-          </div>
-          <div className="flex gap-x-3">
+          </a>
+          <a href="https://twitter.com/ETHshanghai2022" target="_blank" className="flex gap-x-3">
             <div className="inline-flex">
               <Icon name={'twitter'} />
             </div>
             <p>@ETHshanghai2022</p>
-          </div>
+          </a>
         </div>
       </div>
       <div className="flex flex-col gap-y-12">
@@ -33,12 +33,12 @@ export const Footer = () => {
           </h4>
         </div>
         <div className="flex flex-col gap-y-6">
-          <div className="flex gap-x-3">
+          <a href="https://youtu.be/8l67wJ3Wcbc" target="_blank" className="flex gap-x-3">
             <div className="inline-flex">
               <Icon name={'youtube'} />
             </div>
             <p>YouTube live Streaming(English)</p>
-          </div>
+          </a>
         </div>
       </div>
     </footer>
