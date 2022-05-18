@@ -151,7 +151,7 @@ const agendaConfig = (t: (key: string) => string) => [
               <span className="out-link inline-flex">{t('speaker_ling_zhang')}</span> , {t('speaker_ling_zhang_intro')}
             </p>
             <p className="mb-2">
-              <span className="out-link inline-flex">{t('speaker_zhe_sun')}</span>, {t('speaker_ling_zhang_intro')}
+              <span className="out-link inline-flex">{t('speaker_zhe_sun')}</span>, {t('speaker_zhe_sun_intro')}
             </p>
             <p className="mb-2">
               <span className="out-link inline-flex">{t('speaker_jin_hai_luo')}</span>, {t('speaker_jin_hai_luo_intro')}
