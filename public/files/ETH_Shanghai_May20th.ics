@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Asia/Shanghai
+LAST-MODIFIED:20201011T015911Z
+TZURL:http://tzurl.org/zoneinfo-outlook/Asia/Shanghai
+X-LIC-LOCATION:Asia/Shanghai
+BEGIN:STANDARD
+TZNAME:CST
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20220516T082707Z
+UID:1652541080108-37614@ical.marudot.com
+DTSTART;TZID=Asia/Shanghai:20220520T083000
+DTEND;TZID=Asia/Shanghai:20220520T233000
+SUMMARY:ETH Shanghai Web 3.0 Developer Summit｜以太坊上海 Web 3.0 开发者峰会
+URL:https://ethshanghai.org/
+DESCRIPTION:Please check ethshanghai.org for the event agenda. Event will be livestreaming on "Mask Network" YouTube channel\, and WeChat Video Channel "DimensionTech."\n\n请访问 ethshanghai.org 查看峰会日程。峰会将全程在 YouTube 频道 “Mask Network” 和微信视频号 “DimensionTech” 上直播。
+LOCATION:https://hackathon.ethshanghai.org/youtube.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ETH Shanghai Web 3.0 Developer Summit｜以太坊上海 Web 3.0 开发者峰会
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
