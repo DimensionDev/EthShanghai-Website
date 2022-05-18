@@ -72,7 +72,8 @@ const Home: NextPage = () => {
         <meta name="twitter:site" content="@realMaskNetwork" />
         <meta name="twitter:title" content="ETH SHANGHAI - Web 3.0 Summit Crypto City" />
         <meta name="twitter:description" content="Web 3.0 Summit Crypto City" />
-        <meta name="twitter:image" content="https://eth-shanghai-website.vercel.app//images/share-card.jpg" />
+        <meta name="twitter:image" content="https://eth-shanghai-website.vercel.app/share-card.jpg" />
+        <meta property="og:image" content="https://eth-shanghai-website.vercel.app/share-card.jpg" />
       </Head>
       <header className="relative z-20">
         <Navigation />
