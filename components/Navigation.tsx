@@ -21,6 +21,7 @@ interface NavItem {
   name: string
   href: string
   current: boolean
+  target?: string
 }
 
 const NavItem = ({ item }: { item: NavItem }) => {
@@ -30,6 +31,7 @@ const NavItem = ({ item }: { item: NavItem }) => {
       key={item.name}>
       <a
         href={item.href}
+        target={item.target}
         className={classNames(item.current ? '' : '', 'rounded-md px-3 py-2 font-medium font-medium text-white')}
         aria-current={item.current ? 'page' : undefined}>
         {item.name}
@@ -46,7 +48,7 @@ export default function Navigation() {
   const navigation: NavItem[] = useMemo(
     () => [
       { name: t('menu_about_this_summit'), href: '#about-summit', current: true },
-      { name: t('menu_hackathon'), href: '#', current: false },
+      { name: t('menu_hackathon'), href: 'https://hackathon.ethshanghai.org/', target: '_blank', current: false },
       { name: t('menu_summit_agenda'), href: '#summit-agenda', current: false },
       { name: t('menu_speakers'), href: '#speakers', current: false },
       { name: t('menu_partnership'), href: '#partnerships', current: false },

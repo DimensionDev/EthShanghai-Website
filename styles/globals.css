@@ -19,7 +19,7 @@ html {
   @apply pl-6;
 }
 
-.hack-speak > div:first-child p {
+.hack-speak > div:first-child p:first-child {
   @apply text-base;
   @apply xl:text-xl;
 }
