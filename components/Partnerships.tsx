@@ -9,7 +9,7 @@ const partner1 = [
     name: 'Mask Network',
     description: 'Host',
     image: '/images/partnerships/mask.svg',
-    link: '',
+    link: 'https://mask.io',
   },
   {
     name: 'CBCGDF',
@@ -18,7 +18,7 @@ const partner1 = [
             /images/partnerships/cbcgdf@2x.png 2x,
             /images/partnerships/cbcgdf@3x.png 3x
     `,
-    link: '',
+    link: 'http://www.cbcgdf.org/',
   },
   {
     name: 'Business China',
@@ -27,13 +27,13 @@ const partner1 = [
             /images/partnerships/business_china@2x.png 2x,
             /images/partnerships/business_china@3x.png 3x
     `,
-    link: '',
+    link: 'https://www.businesschina.org.sg/en/',
   },
   {
     name: 'Ethereum Foundation',
     description: 'Co-organizers',
     image: '/images/partnerships/ethereum_foundation.svg',
-    link: '',
+    link: 'https://ethereum.org/en/',
   },
 ]
 
@@ -42,7 +42,7 @@ const partner2 = [
     name: 'ChainIDE',
     description: 'Lead Sponsor',
     image: '/images/partnerships/chain_ide.svg',
-    link: '',
+    link: 'https://chainide.com/',
   },
   {
     name: 'Mecha Morphing',
@@ -51,7 +51,7 @@ const partner2 = [
             /images/partnerships/mecha_morphing@2x.png 2x,
             /images/partnerships/mecha_morphing@3x.png 3x
     `,
-    link: '',
+    link: 'https://www.mechamorphing.com/',
   },
 ]
 

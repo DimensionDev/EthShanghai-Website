@@ -33,7 +33,7 @@ export const Hosts = () => {
   return (
     <div>
       <div className="mb-20">
-        <HeaderSection content={t('hosts')} />
+        <HeaderSection content={t('hosts')} direction="reverse" />
       </div>
       <div className="mt-24 grid grid-cols-2 grid-rows-2 gap-6 xl:grid-cols-4 xl:grid-rows-1 xl:gap-9 xl:px-16">
         {hostsConfig.map((x) => (

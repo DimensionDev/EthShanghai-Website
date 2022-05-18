@@ -11,7 +11,7 @@ interface PartnerCardProps {
 export const PartnerCard = ({ name, description, image, backgroundClass, link }: PartnerCardProps) => {
   return (
     <div className={`${backgroundClass} hover-card rounded-xl bg-speaker-master text-white xl:rounded-2.5xl`}>
-      <div className="p-3 xl:p-6 xl:pt-3">
+      <a className="block p-3 xl:p-6 xl:pt-3" href={link} target="_blank">
         <div className="flex justify-center">
           {image.includes('.svg') ? <img src={image} alt={name} /> : <img srcSet={image} alt={name} />}
         </div>
@@ -19,7 +19,7 @@ export const PartnerCard = ({ name, description, image, backgroundClass, link }:
           <p className="text-shadow text-center">{description}</p>
           <p className="text-shadow text-center font-bold">{name}</p>
         </div>
-      </div>
+      </a>
     </div>
   )
 }
