@@ -14,6 +14,7 @@ import { MediaSupport } from '../components/MediaSupport'
 import { CommunitySupport } from '../components/CommunitySupport'
 import { Icon } from '../components/Icon'
 import { Partnerships } from '../components/Partnerships'
+import Head from 'next/head'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common')
@@ -66,6 +67,13 @@ const Home: NextPage = () => {
 
   return (
     <div className="flex min-h-screen flex-col bg-main">
+      <Head>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@realMaskNetwork" />
+        <meta name="twitter:title" content="ETH SHANGHAI - Web 3.0 Summit Crypto City" />
+        <meta name="twitter:description" content="Web 3.0 Summit Crypto City" />
+        <meta name="twitter:image" content="https://eth-shanghai-website.vercel.app//images/share-card.jpg" />
+      </Head>
       <header className="relative z-20">
         <Navigation />
       </header>
