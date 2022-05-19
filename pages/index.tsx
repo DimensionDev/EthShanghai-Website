@@ -65,12 +65,22 @@ const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col bg-main">
       <Head>
+        <title>ETH SHANGHAI 2022</title>
+        <meta name="description" content="Web 3.0 Developer Summit, taking place on May 20, 2022" />
+        <meta property="og:title" content="ETH SHANGHAI 2022" />
+        <meta property="og:description" content="Web 3.0 Developer Summit, taking place on May 20, 2022" />
+        <meta property="og:site_name" content="ETH SHANGHAI" />
+        <meta property="og:image" content="https://eth-shanghai-website.vercel.app/share-card.jpg" />
+        <meta property="og:url" content="https://www.ethshanghai.org/" />
+        <meta property="og:type" content="website" />
+        <meta itemProp="name" content="ETH SHANGHAI 2022" />
+        <meta itemProp="description" content="Web 3.0 Developer Summit, taking place on May 20, 2022" />
+        <meta itemProp="image" content="https://eth-shanghai-website.vercel.app/share-card.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@realMaskNetwork" />
         <meta name="twitter:title" content="ETH SHANGHAI 2022" />
         <meta name="twitter:description" content="Web 3.0 Developer Summit, taking place on May 20, 2022" />
         <meta name="twitter:image" content="https://eth-shanghai-website.vercel.app/share-card.jpg" />
-        <meta property="og:image" content="https://eth-shanghai-website.vercel.app/share-card.jpg" />
       </Head>
       <header className="relative z-20">
         <Navigation />
