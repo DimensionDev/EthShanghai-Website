@@ -8,12 +8,12 @@ module.exports = {
     return [
       {
         source: '/youtube',
-        destination: '/',
+        destination: 'https://youtu.be/8l67wJ3Wcbc',
         permanent: true,
       },
       {
         source: '/youtube.html',
-        destination: '/',
+        destination: 'https://youtu.be/8l67wJ3Wcbc',
         permanent: true,
       },
     ]
