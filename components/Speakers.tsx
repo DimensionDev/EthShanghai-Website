@@ -95,6 +95,29 @@ const speaker = (t: any) => [
     image: '/images/speakers/zhe_sun.png 1x, /images/speakers/zhe_sun@2x.png 2x, /images/speakers/zhe_sun@3x.png 3x',
   },
   {
+    name: t('speaker_zhou_jinfeng'),
+    description: t('speaker_zhou_jinfeng_intro'),
+    image:
+      '/images/speakers/zhou_jinfeng.png 1x, /images/speakers/zhou_jinfeng@2x.png 2x, /images/speakers/zhou_jinfeng@3x.png 3x',
+  },
+  {
+    name: t('speaker_eva_beylin'),
+    description: t('speaker_eva_beylin_intro'),
+    image:
+      '/images/speakers/eva_beylin.png 1x, /images/speakers/eva_beylin@2x.png 2x, /images/speakers/eva_beylin@3x.png 3x',
+  },
+  {
+    name: t('speaker_yang_wang'),
+    description: t('speaker_yang_wang_intro'),
+    image:
+      '/images/speakers/yang_wang.png 1x, /images/speakers/yang_wang@2x.png 2x, /images/speakers/yang_wang@3x.png 3x',
+  },
+  {
+    name: t('speaker_mike_yao'),
+    description: t('speaker_mike_yao_intro'),
+    image: '/images/speakers/mike_yao.png 1x, /images/speakers/mike_yao@2x.png 2x, /images/speakers/mike_yao@3x.png 3x',
+  },
+  {
     name: t('speaker_to_be_announced'),
     description: t('speaker_to_be_announced_intro'),
     image:

@@ -55,10 +55,13 @@ const agendaConfig = (t: (key: string) => string) => [
         ),
       },
       {
-        during: '10:20 ~ 10:40',
+        during: '10:20 ~ 10:30',
         content: (
           <div>
-            <p>{t('agenda_break')}</p>
+            <p>
+              {t('agenda_kickoff')} – <span className="out-link inline-flex">{t('speaker_zhou_jinfeng')}</span>,{' '}
+              {t('speaker_zhou_jinfeng_intro')}
+            </p>
           </div>
         ),
       },
@@ -80,7 +83,13 @@ const agendaConfig = (t: (key: string) => string) => [
         during: '11:10 ~ 11:40',
         content: (
           <div>
-            <p>{t('agenda_to_be_announced')}</p>
+            <p>
+              CEO Fireside Chat – <span className="out-link inline-flex">{t('speaker_joseph_lubin')}</span>,{' '}
+              {t('speaker_joseph_lubin_intro')}
+            </p>
+            <p>
+              <b>{t('agenda_day1_8')}</b>
+            </p>
           </div>
         ),
       },
@@ -180,11 +189,8 @@ const agendaConfig = (t: (key: string) => string) => [
         content: (
           <div>
             <p>
-              CEO Fireside Chat – <span className="out-link inline-flex">{t('speaker_joseph_lubin')}</span>,{' '}
-              {t('speaker_joseph_lubin_intro')}
-            </p>
-            <p>
-              <b>{t('agenda_day1_8')}</b>
+              {t('agenda_keynote_speech')} – <span className="out-link inline-flex">{t('speaker_eva_beylin')}</span>,{' '}
+              {t('speaker_eva_beylin_intro')}
             </p>
           </div>
         ),

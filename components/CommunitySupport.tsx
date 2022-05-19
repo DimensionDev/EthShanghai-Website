@@ -12,11 +12,11 @@ const config = [
     image: '/images/community-support/snap_fingers_dao.svg',
     link: 'https://snapfingers.com/',
   },
-  {
-    name: 'Blockbeats',
-    image: '/images/media-support/block_beats.svg',
-    link: 'https://www.theblockbeats.info/',
-  },
+  // {
+  //   name: 'Blockbeats',
+  //   image: '/images/media-support/block_beats.svg',
+  //   link: 'https://www.theblockbeats.info/',
+  // },
   {
     name: 'DengLian',
     image: '/images/community-support/denglian.svg',
@@ -48,6 +48,60 @@ const config = [
     name: 'Mole DAO',
     image:
       '/images/community-support/moledao.png 1x, /images/community-support/moledao@2x.png 2x, /images/community-support/moledao@3x.png 3x',
+    link: 'https://moledao.io/#/home',
+  },
+  {
+    name: 'TinTin',
+    image:
+      '/images/community-support/tintin.png 1x, /images/community-support/tintin@2x.png 2x, /images/community-support/tintin@3x.png 3x',
+    link: 'https://moledao.io/#/home',
+  },
+  {
+    name: 'Genki',
+    image:
+      '/images/community-support/genki.png 1x, /images/community-support/genki@2x.png 2x, /images/community-support/genki@3x.png 3x',
+    link: 'https://moledao.io/#/home',
+  },
+  {
+    name: 'SeeDao',
+    image:
+      '/images/community-support/seedao.png 1x, /images/community-support/seedao@2x.png 2x, /images/community-support/seedao@3x.png 3x',
+    link: 'https://moledao.io/#/home',
+  },
+  {
+    name: 'ShowMe',
+    image:
+      '/images/community-support/showme.png 1x, /images/community-support/showme@2x.png 2x, /images/community-support/showme@3x.png 3x',
+    link: 'https://moledao.io/#/home',
+  },
+  {
+    name: 'DeepLearning',
+    image:
+      '/images/community-support/deep_learning.png 1x, /images/community-support/deep_learning@2x.png 2x, /images/community-support/deep_learning@3x.png 3x',
+    link: 'https://moledao.io/#/home',
+  },
+  {
+    name: '427318916',
+    image:
+      '/images/community-support/427318916.png 1x, /images/community-support/427318916@2x.png 2x, /images/community-support/427318916@3x.png 3x',
+    link: 'https://moledao.io/#/home',
+  },
+  {
+    name: 'rebase',
+    image:
+      '/images/community-support/rebase.png 1x, /images/community-support/rebase@2x.png 2x, /images/community-support/rebase@3x.png 3x',
+    link: 'https://moledao.io/#/home',
+  },
+  {
+    name: 'Atem',
+    image:
+      '/images/community-support/atem.png 1x, /images/community-support/atem@2x.png 2x, /images/community-support/atem@3x.png 3x',
+    link: 'https://moledao.io/#/home',
+  },
+  {
+    name: 'Web3 Revolution',
+    image:
+      '/images/community-support/web3.png 1x, /images/community-support/web3@2x.png 2x, /images/community-support/web3@3x.png 3x',
     link: 'https://moledao.io/#/home',
   },
 ]
