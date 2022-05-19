@@ -9,7 +9,7 @@ export const Banner = ({ children }: BannerProps) => {
   return (
     <section className="relative bottom-26 z-0 flex h-200 bg-no-repeat">
       <div className="absolute top-0 left-0 z-10 block h-full w-full">
-        <Image src={'/images/banner/banner_bg.svg'} layout="fill" objectFit="cover" alt={'TODO'} />
+        <Image src={'/images/banner/banner_bg.jpg'} layout="fill" objectFit="cover" alt={'TODO'} />
       </div>
       <div className="container relative z-20 m-auto my-0">
         <div className="flex h-full items-center justify-center pt-24">
