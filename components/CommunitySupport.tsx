@@ -121,7 +121,11 @@ export const CommunitySupport = () => {
               target={x.link ? '_blank' : undefined}
               key={x.name}
               className="inline-flex justify-center rounded-lg bg-support px-2 py-3 xl:px-7 xl:py-8">
-              {x.image.includes('.svg') ? <img src={x.image} alt={x.name} /> : <img srcSet={x.image} alt={x.name} />}
+              {x.image.includes('.svg') ? (
+                <img src={x.image} alt={x.name} />
+              ) : (
+                <img srcSet={x.image} src={x.image.split(' 1x')[0]} alt={x.name} />
+              )}
             </a>
           ))}
         </div>
