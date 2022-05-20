@@ -30,19 +30,19 @@ const partner1 = (t: any) => [
     link: 'https://www.businesschina.org.sg/en/',
   },
   {
-    name: 'Ethereum Foundation',
-    description: t('co_organizers'),
-    image: '/images/partnerships/ethereum_foundation.svg',
-    link: 'https://ethereum.org/en/',
+    name: 'ChainIDE',
+    description: t('lead_sponsor'),
+    image: '/images/partnerships/chain_ide.svg',
+    link: 'https://chainide.com/',
   },
 ]
 
 const partner2 = (t: any) => [
   {
-    name: 'ChainIDE',
-    description: t('lead_sponsor'),
-    image: '/images/partnerships/chain_ide.svg',
-    link: 'https://chainide.com/',
+    name: 'Ethereum Foundation',
+    description: t('co_sponsor'),
+    image: '/images/partnerships/ethereum_foundation.svg',
+    link: 'https://ethereum.org/en/',
   },
   {
     name: 'Mecha Morphing',
