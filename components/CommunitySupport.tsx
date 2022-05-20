@@ -3,6 +3,12 @@ import { Icon } from './Icon'
 
 const config = [
   {
+    name: 'TinTin',
+    image:
+      '/images/community-support/tintin.png 1x, /images/community-support/tintin@2x.png 2x, /images/community-support/tintin@3x.png 3x',
+    link: 'https://twitter.com/Tintinland2021',
+  },
+  {
     name: 'NFTScan',
     image: '/images/community-support/nftscan.svg',
     link: 'https://www.nftscan.com/',
@@ -49,12 +55,6 @@ const config = [
     image:
       '/images/community-support/moledao.png 1x, /images/community-support/moledao@2x.png 2x, /images/community-support/moledao@3x.png 3x',
     link: 'https://moledao.io/#/home',
-  },
-  {
-    name: 'TinTin',
-    image:
-      '/images/community-support/tintin.png 1x, /images/community-support/tintin@2x.png 2x, /images/community-support/tintin@3x.png 3x',
-    link: 'https://twitter.com/Tintinland2021',
   },
   {
     name: 'Genki',
