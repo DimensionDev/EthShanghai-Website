@@ -130,7 +130,7 @@ export const CommunitySupport = () => {
               href={x.link ?? undefined}
               target={x.link ? '_blank' : undefined}
               key={x.name}
-              className="inline-flex justify-center rounded-lg bg-support px-2 py-3 xl:px-7 xl:py-8">
+              className="inline-flex h-28 justify-center rounded-lg bg-support px-2 py-3 xl:px-7 xl:py-8">
               {x.image.includes('.svg') ? (
                 <img src={x.image} alt={x.name} />
               ) : (
