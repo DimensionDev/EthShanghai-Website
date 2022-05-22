@@ -104,6 +104,16 @@ const config = [
       '/images/community-support/web3.png 1x, /images/community-support/web3@2x.png 2x, /images/community-support/web3@3x.png 3x',
     link: null,
   },
+  {
+    name: 'ETHPlanet',
+    image: '/images/community-support/ethplanet.svg',
+    link: 'https://www.ethplanet.org/',
+  },
+  {
+    name: '原语里弄',
+    image: '/images/community-support/yuanyu.svg',
+    link: 'https://www.primitiveslane.org/',
+  },
 ]
 
 export const CommunitySupport = () => {
