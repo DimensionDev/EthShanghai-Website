@@ -84,6 +84,12 @@ const speaker = (t: any) => [
       '/images/speakers/chen_qiufan.png 1x, /images/speakers/chen_qiufan@2x.png 2x, /images/speakers/chen_qiufan@3x.png 3x',
   },
   {
+    name: t('speaker_jinhai_luo'),
+    description: t('speaker_jinhai_luo_intro'),
+    image:
+      '/images/speakers/jinhai_luo.png 1x, /images/speakers/jinhai_luo@2x.png 2x, /images/speakers/jinhai_luo@3x.png 3x',
+  },
+  {
     name: t('speaker_ling_zhang'),
     description: t('speaker_ling_zhang_intro'),
     image:
